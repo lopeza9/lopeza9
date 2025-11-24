@@ -1,0 +1,1320 @@
+{
+  "locations": {
+    "orlando": {
+      "id": "orlando",
+      "name": "Orlando",
+      "slug": "orlando",
+      "address": {
+        "street": "4085 L B McLeod Rd, Suite F",
+        "city": "Orlando",
+        "state": "FL",
+        "zip": "32811",
+        "full": "4085 L B McLeod Rd, Suite F, Orlando, FL 32811"
+      },
+      "contact": {
+        "phone": "(407) 649-6762",
+        "email": "orlando@fabinrosabjj.com"
+      },
+      "social": {
+        "instagram": "@frbjj_orlando",
+        "instagram_url": "https://www.instagram.com/frbjj_orlando"
+      },
+      "hours": {
+        "weekday": "Monday - Friday: 6:00 AM - 9:00 PM",
+        "saturday": "Saturday: 6:00 AM - 12:00 PM",
+        "sunday": "Sunday: Closed"
+      },
+      "schedules": {
+        "adult": [
+          {
+            "time": "6:30am - 7:30am",
+            "monday": {
+              "classes": ["FR Fit Training", "BJJ All Levels", "Muay Thai"],
+              "display": "FR Fit Training<br/>6:30 am - 7:30 am<br/><br/>BJJ All Levels<br/>6:30 am - 7:30 am<br/><br/>Muay Thai<br/>6:30 am - 7:30 am"
+            },
+            "tuesday": {
+              "classes": ["FR Fit Training", "BJJ All Levels"],
+              "display": "FR Fit Training<br/>6:30 am - 7:30 am<br/><br/>BJJ All Levels<br/>6:30 am - 7:30 am"
+            },
+            "wednesday": {
+              "classes": ["FR Fit Training", "BJJ All Levels", "Muay Thai"],
+              "display": "FR Fit Training<br/>6:30 am - 7:30 am<br/><br/>BJJ All Levels<br/>6:30 am - 7:30 am<br/><br/>Muay Thai<br/>6:30 am - 7:30 am"
+            },
+            "thursday": {
+              "classes": ["FR Fit Training", "No-Gi BJJ All Levels"],
+              "display": "FR Fit Training<br/>6:30 am - 7:30 am<br/><br/>No-Gi BJJ All Levels<br/>6:30 am - 7:30 am"
+            },
+            "friday": {
+              "classes": ["FR Fit Training", "BJJ All Levels", "Muay Thai"],
+              "display": "FR Fit Training<br/>6:30 am - 7:30 am<br/><br/>BJJ All Levels<br/>6:30 am - 7:30 am<br/><br/>Muay Thai<br/>6:30 am - 7:30 am"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "10:00am - 11:00am",
+            "monday": {
+              "classes": [],
+              "display": "-"
+            },
+            "tuesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "wednesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "thursday": {
+              "classes": [],
+              "display": "-"
+            },
+            "friday": {
+              "classes": [],
+              "display": "-"
+            },
+            "saturday": {
+              "classes": ["Women's BJJ"],
+              "display": "Women's BJJ<br/>10:00 am - 11:00 am"
+            }
+          },
+          {
+            "time": "11:00am - 12:00pm",
+            "monday": {
+              "classes": [],
+              "display": "-"
+            },
+            "tuesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "wednesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "thursday": {
+              "classes": [],
+              "display": "-"
+            },
+            "friday": {
+              "classes": [],
+              "display": "-"
+            },
+            "saturday": {
+              "classes": ["FR Fit Training", "Muay Thai"],
+              "display": "FR Fit Training<br/>11:00 am - 12:00 pm<br/><br/>Muay Thai<br/>11:00 am - 12:00 pm"
+            }
+          },
+          {
+            "time": "12:00pm - 1:00pm",
+            "monday": {
+              "classes": ["BJJ All Levels", "FR Fit Training"],
+              "display": "BJJ All Levels<br/>12:00 pm - 1:00 pm<br/><br/>FR Fit Training<br/>12:00 pm - 1:00 pm"
+            },
+            "tuesday": {
+              "classes": ["BJJ All Levels", "FR Fit Training"],
+              "display": "BJJ All Levels<br/>12:00 pm - 1:00 pm<br/><br/>FR Fit Training<br/>12:00 pm - 1:00 pm"
+            },
+            "wednesday": {
+              "classes": ["BJJ All Levels", "FR Fit Training"],
+              "display": "BJJ All Levels<br/>12:00 pm - 1:00 pm<br/><br/>FR Fit Training<br/>12:00 pm - 1:00 pm"
+            },
+            "thursday": {
+              "classes": ["No-Gi BJJ All Levels", "FR Fit Training"],
+              "display": "No-Gi BJJ All Levels<br/>12:00 pm - 1:00 pm<br/><br/>FR Fit Training<br/>12:00 pm - 1:00 pm"
+            },
+            "friday": {
+              "classes": ["BJJ All Levels", "FR Fit Training"],
+              "display": "BJJ All Levels<br/>12:00 pm - 1:00 pm<br/><br/>FR Fit Training<br/>12:00 pm - 1:00 pm"
+            },
+            "saturday": {
+              "classes": ["BJJ Open Mat"],
+              "display": "BJJ Open Mat<br/>12:00 pm - 1:00 pm"
+            }
+          },
+          {
+            "time": "5:30pm - 6:30pm",
+            "monday": {
+              "classes": ["FR Fit Training", "Muay Thai"],
+              "display": "FR Fit Training<br/>5:30 pm - 6:30 pm<br/><br/>Muay Thai<br/>5:30 pm - 6:30 pm"
+            },
+            "tuesday": {
+              "classes": ["FR Fit Training", "Muay Thai"],
+              "display": "FR Fit Training<br/>5:30 pm - 6:30 pm<br/><br/>Muay Thai<br/>5:30 pm - 6:30 pm"
+            },
+            "wednesday": {
+              "classes": ["FR Fit Training", "Muay Thai"],
+              "display": "FR Fit Training<br/>5:30 pm - 6:30 pm<br/><br/>Muay Thai<br/>5:30 pm - 6:30 pm"
+            },
+            "thursday": {
+              "classes": ["FR Fit Training", "Muay Thai"],
+              "display": "FR Fit Training<br/>5:30 pm - 6:30 pm<br/><br/>Muay Thai<br/>5:30 pm - 6:30 pm"
+            },
+            "friday": {
+              "classes": ["FR Fit Training", "Muay Thai"],
+              "display": "FR Fit Training<br/>5:30 pm - 6:30 pm<br/><br/>Muay Thai<br/>5:30 pm - 6:30 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "6:30pm - 7:30pm",
+            "monday": {
+              "classes": ["BJJ Fundamentals", "Competition Class"],
+              "display": "BJJ Fundamentals<br/>6:30 pm - 7:30 pm<br/><br/>Competition Class<br/>6:30 pm - 7:30 pm"
+            },
+            "tuesday": {
+              "classes": ["BJJ Fundamentals", "Competition Class"],
+              "display": "BJJ Fundamentals<br/>6:30 pm - 7:30 pm<br/><br/>Competition Class<br/>6:30 pm - 7:30 pm"
+            },
+            "wednesday": {
+              "classes": ["BJJ Fundamentals", "Competition Class"],
+              "display": "BJJ Fundamentals<br/>6:30 pm - 7:30 pm<br/><br/>Competition Class<br/>6:30 pm - 7:30 pm"
+            },
+            "thursday": {
+              "classes": ["No-Gi BJJ Fundamentals", "Competition Class"],
+              "display": "No-Gi BJJ Fundamentals<br/>6:30 pm - 7:30 pm<br/><br/>Competition Class<br/>6:30 pm - 7:30 pm"
+            },
+            "friday": {
+              "classes": ["BJJ Fundamentals", "Competition Class"],
+              "display": "BJJ Fundamentals<br/>6:30 pm - 7:30 pm<br/><br/>Competition Class<br/>6:30 pm - 7:30 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "7:30pm - 8:30pm",
+            "monday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>7:30 pm - 8:30 pm"
+            },
+            "tuesday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>7:30 pm - 8:30 pm"
+            },
+            "wednesday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>7:30 pm - 8:30 pm"
+            },
+            "thursday": {
+              "classes": ["No-Gi BJJ All Levels"],
+              "display": "No-Gi BJJ All Levels<br/>7:30 pm - 8:30 pm"
+            },
+            "friday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>7:30 pm - 8:30 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          }
+        ],
+        "kids": [
+          {
+            "time": "11:00am - 12:00pm",
+            "monday": {
+              "classes": [],
+              "display": "-"
+            },
+            "tuesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "wednesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "thursday": {
+              "classes": [],
+              "display": "-"
+            },
+            "friday": {
+              "classes": [],
+              "display": "-"
+            },
+            "saturday": {
+              "classes": ["Kids BJJ All Ages"],
+              "display": "Kids BJJ All Ages<br/>11:00 am - 12:00 pm"
+            }
+          },
+          {
+            "time": "4:45pm - 5:30pm",
+            "monday": {
+              "classes": ["Kids BJJ (4-7 Years Old)", "FR Fit (7-12 Years Old)"],
+              "display": "Kids BJJ<br/>4:45 pm - 5:30 pm<br/>(4-7 Years Old)<br/><br/>FR Fit<br/>4:45 pm - 5:30 pm<br/>(7-12 Years Old)"
+            },
+            "tuesday": {
+              "classes": ["Kids BJJ (4-7 Years Old)", "Muay Thai (7-12 Years Old)", "FR Fit (7-12 Years Old)"],
+              "display": "Kids BJJ<br/>4:45 pm - 5:30 pm<br/>(4-7 Years Old)<br/><br/>Muay Thai<br/>4:45 pm - 5:30 pm<br/>(7-12 Years Old)<br/><br/>FR Fit<br/>4:45 pm - 5:30 pm<br/>(7-12 Years Old)"
+            },
+            "wednesday": {
+              "classes": ["Kids BJJ (4-7 Years Old)", "FR Fit (7-12 Years Old)"],
+              "display": "Kids BJJ<br/>4:45 pm - 5:30 pm<br/>(4-7 Years Old)<br/><br/>FR Fit<br/>4:45 pm - 5:30 pm<br/>(7-12 Years Old)"
+            },
+            "thursday": {
+              "classes": ["Muay Thai (7-12 Years Old)", "Kids No-Gi (4-7 Years Old)", "FR Fit (7-12 Years Old)"],
+              "display": "Muay Thai<br/>4:45 pm - 5:30 pm<br/>(7-12 Years Old)<br/><br/>Kids No-Gi<br/>4:45 pm - 5:30 pm<br/>(4-7 Years Old)<br/><br/>FR Fit<br/>4:45 pm - 5:30 pm<br/>(7-12 Years Old)"
+            },
+            "friday": {
+              "classes": ["Kids BJJ (4-7 Years Old)", "FR Fit (7-12 Years Old)"],
+              "display": "Kids BJJ<br/>4:45 pm - 5:30 pm<br/>(4-7 Years Old)<br/><br/>FR Fit<br/>4:45 pm - 5:30 pm<br/>(7-12 Years Old)"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "5:30pm - 6:30pm",
+            "monday": {
+              "classes": ["Kids BJJ (8-12 Years Old)", "Muay Thai (13 years and up)", "FR Fit (13 years and up)"],
+              "display": "Kids BJJ<br/>5:30 pm - 6:30 pm<br/>(8-12 Years Old)<br/><br/>Muay Thai<br/>5:30 pm - 6:30 pm<br/>(13 years and up)<br/><br/>FR Fit<br/>5:30 pm - 6:30 pm<br/>(13 years and up)"
+            },
+            "tuesday": {
+              "classes": ["Kids BJJ (8-12 Years Old)", "Muay Thai (13 years and up)", "FR Fit (13 years and up)"],
+              "display": "Kids BJJ<br/>5:30 pm - 6:30 pm<br/>(8-12 Years Old)<br/><br/>Muay Thai<br/>5:30 pm - 6:30 pm<br/>(13 years and up)<br/><br/>FR Fit<br/>5:30 pm - 6:30 pm<br/>(13 years and up)"
+            },
+            "wednesday": {
+              "classes": ["Kids BJJ (8-12 Years Old)", "Muay Thai (13 years and up)", "FR Fit (13 years and up)"],
+              "display": "Kids BJJ<br/>5:30 pm - 6:30 pm<br/>(8-12 Years Old)<br/><br/>Muay Thai<br/>5:30 pm - 6:30 pm<br/>(13 years and up)<br/><br/>FR Fit<br/>5:30 pm - 6:30 pm<br/>(13 years and up)"
+            },
+            "thursday": {
+              "classes": ["Kids No-Gi (8-12 Years Old)", "Muay Thai (13 years and up)", "FR Fit (13 years and up)"],
+              "display": "Kids No-Gi<br/>5:30 pm - 6:30 pm<br/>(8-12 Years Old)<br/><br/>Muay Thai<br/>5:30 pm - 6:30 pm<br/>(13 years and up)<br/><br/>FR Fit<br/>5:30 pm - 6:30 pm<br/>(13 years and up)"
+            },
+            "friday": {
+              "classes": ["Kids BJJ (8-12 Years Old)", "Muay Thai (13 years and up)", "FR Fit (13 years and up)"],
+              "display": "Kids BJJ<br/>5:30 pm - 6:30 pm<br/>(8-12 Years Old)<br/><br/>Muay Thai<br/>5:30 pm - 6:30 pm<br/>(13 years and up)<br/><br/>FR Fit<br/>5:30 pm - 6:30 pm<br/>(13 years and up)"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "6:30pm - 8:00pm",
+            "monday": {
+              "classes": ["BJJ Fundamentals (13 years and up)", "Kids Competition Class"],
+              "display": "BJJ Fundamentals<br/>6:30 pm - 8:00 pm<br/>(13 years and up)<br/><br/>Kids Competition Class<br/>6:30 pm - 8:00 pm"
+            },
+            "tuesday": {
+              "classes": ["BJJ Fundamentals (13 years and up)", "Kids Competition Class"],
+              "display": "BJJ Fundamentals<br/>6:30 pm - 8:00 pm<br/>(13 years and up)<br/><br/>Kids Competition Class<br/>6:30 pm - 8:00 pm"
+            },
+            "wednesday": {
+              "classes": ["BJJ Fundamentals (13 years and up)", "Kids Competition Class"],
+              "display": "BJJ Fundamentals<br/>6:30 pm - 8:00 pm<br/>(13 years and up)<br/><br/>Kids Competition Class<br/>6:30 pm - 8:00 pm"
+            },
+            "thursday": {
+              "classes": ["No Gi BJJ Fundamentals (13 years and up)", "Kids Competition Class"],
+              "display": "No Gi BJJ Fundamentals<br/>6:30 pm - 8:00 pm<br/>(13 years and up)<br/><br/>Kids Competition Class<br/>6:30 pm - 8:00 pm"
+            },
+            "friday": {
+              "classes": ["BJJ Fundamentals (13 years and up)", "Kids Competition Class"],
+              "display": "BJJ Fundamentals<br/>6:30 pm - 8:00 pm<br/>(13 years and up)<br/><br/>Kids Competition Class<br/>6:30 pm - 8:00 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          }
+        ]
+      }
+    },
+    "casselberry": {
+      "id": "casselberry",
+      "name": "Casselberry",
+      "slug": "casselberry",
+      "address": {
+        "street": "232 FL-436",
+        "city": "Casselberry",
+        "state": "FL",
+        "zip": "32707",
+        "full": "232 FL-436, Casselberry, FL 32707"
+      },
+      "contact": {
+        "phone": "(407) 360-5669",
+        "email": "casselberry@fabinrosabjj.com"
+      },
+      "social": {
+        "instagram": "@frbjj_casselberry",
+        "instagram_url": "https://www.instagram.com/frbjj_casselberry"
+      },
+      "hours": {
+        "weekday": "Monday - Friday: 6:30 AM - 8:30 PM",
+        "saturday": "Saturday: 11:00 AM - 12:00 PM",
+        "sunday": "Sunday: Closed"
+      },
+      "schedules": {
+        "adult": [
+          {
+            "time": "11:00am - 12:00pm",
+            "monday": {
+              "classes": [],
+              "display": "-"
+            },
+            "tuesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "wednesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "thursday": {
+              "classes": [],
+              "display": "-"
+            },
+            "friday": {
+              "classes": [],
+              "display": "-"
+            },
+            "saturday": {
+              "classes": ["BJJ Open Mat"],
+              "display": "BJJ Open Mat<br/>11:00 am - 12:00 pm"
+            }
+          },
+          {
+            "time": "12:00pm - 1:00pm",
+            "monday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>12:00 pm - 1:00 pm"
+            },
+            "tuesday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>12:00 pm - 1:00 pm"
+            },
+            "wednesday": {
+              "classes": ["No Gi BJJ All Levels"],
+              "display": "No Gi BJJ All Levels<br/>12:00 pm - 1:00 pm"
+            },
+            "thursday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>12:00 pm - 1:00 pm"
+            },
+            "friday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>12:00 pm - 1:00 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "6:30pm - 7:30pm",
+            "monday": {
+              "classes": ["BJJ Fundamentals"],
+              "display": "BJJ Fundamentals<br/>6:30 pm - 7:30 pm"
+            },
+            "tuesday": {
+              "classes": ["BJJ Fundamentals"],
+              "display": "BJJ Fundamentals<br/>6:30 pm - 7:30 pm"
+            },
+            "wednesday": {
+              "classes": ["No Gi BJJ Fundamentals"],
+              "display": "No Gi BJJ Fundamentals<br/>6:30 pm - 7:30 pm"
+            },
+            "thursday": {
+              "classes": ["BJJ Fundamentals"],
+              "display": "BJJ Fundamentals<br/>6:30 pm - 7:30 pm"
+            },
+            "friday": {
+              "classes": ["BJJ Fundamentals"],
+              "display": "BJJ Fundamentals<br/>6:30 pm - 7:30 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "7:30pm - 8:30pm",
+            "monday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>7:30 pm - 8:30 pm"
+            },
+            "tuesday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>7:30 pm - 8:30 pm"
+            },
+            "wednesday": {
+              "classes": ["No Gi BJJ All Levels"],
+              "display": "No Gi BJJ All Levels<br/>7:30 pm - 8:30 pm"
+            },
+            "thursday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>7:30 pm - 8:30 pm"
+            },
+            "friday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>7:30 pm - 8:30 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          }
+        ],
+        "kids": [
+          {
+            "time": "10:00am - 11:00am",
+            "monday": {
+              "classes": [],
+              "display": "-"
+            },
+            "tuesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "wednesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "thursday": {
+              "classes": [],
+              "display": "-"
+            },
+            "friday": {
+              "classes": [],
+              "display": "-"
+            },
+            "saturday": {
+              "classes": ["Kids BJJ - All Ages"],
+              "display": "Kids BJJ - All Ages<br/>10:00 am - 11:00 am"
+            }
+          },
+          {
+            "time": "4:45pm - 5:30pm",
+            "monday": {
+              "classes": ["Kids BJJ (4-7 Years Old)"],
+              "display": "Kids BJJ (4 - 7 Years Old)<br/>4:45 pm - 5:30 pm"
+            },
+            "tuesday": {
+              "classes": ["Kids BJJ (4-7 Years Old)"],
+              "display": "Kids BJJ (4 - 7 Years Old)<br/>4:45 pm - 5:30 pm"
+            },
+            "wednesday": {
+              "classes": ["Kids BJJ No Gi (4-7 Years Old)"],
+              "display": "Kids BJJ No Gi (4 - 7 Years Old)<br/>4:45 pm - 5:30 pm"
+            },
+            "thursday": {
+              "classes": ["Kids BJJ (4-7 Years Old)"],
+              "display": "Kids BJJ (4 - 7 Years Old)<br/>4:45 pm - 5:30 pm"
+            },
+            "friday": {
+              "classes": ["Kids BJJ (4-7 Years Old)"],
+              "display": "Kids BJJ (4 - 7 Years Old)<br/>4:45 pm - 5:30 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "5:30pm - 6:30pm",
+            "monday": {
+              "classes": ["Kids BJJ (8-12 Years Old)"],
+              "display": "Kids BJJ (8 - 12 Years Old)<br/>5:30 pm - 6:30 pm"
+            },
+            "tuesday": {
+              "classes": ["Kids BJJ (8-12 Years Old)"],
+              "display": "Kids BJJ (8 - 12 Years Old)<br/>5:30 pm - 6:30 pm"
+            },
+            "wednesday": {
+              "classes": ["Kids BJJ No Gi (8-12 Years Old)"],
+              "display": "Kids BJJ No Gi (8 - 12 Years Old)<br/>5:30 pm - 6:30 pm"
+            },
+            "thursday": {
+              "classes": ["Kids BJJ (8-12 Years Old)"],
+              "display": "Kids BJJ (8 - 12 Years Old)<br/>5:30 pm - 6:30 pm"
+            },
+            "friday": {
+              "classes": ["Kids BJJ (8-12 Years Old)"],
+              "display": "Kids BJJ (8 - 12 Years Old)<br/>5:30 pm - 6:30 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          }
+        ]
+      }
+    },
+    "belle-isle": {
+      "id": "belle-isle",
+      "name": "Belle Isle",
+      "slug": "belle-isle",
+      "address": {
+        "street": "119 Gatlin Ave",
+        "city": "Belle Isle",
+        "state": "FL",
+        "zip": "32809",
+        "full": "119 Gatlin Ave, Belle Isle, FL 32809"
+      },
+      "contact": {
+        "phone": "(407) 730-4060",
+        "email": "belleisle@fabinrosabjj.com"
+      },
+      "social": {
+        "instagram": "@frbjj_belleisle",
+        "instagram_url": "https://www.instagram.com/frbjj_belleisle"
+      },
+      "hours": {
+        "weekday": "Monday - Friday: 10:00 AM - 8:30 PM",
+        "saturday": "Saturday: 11:00 AM - 12:00 PM",
+        "sunday": "Sunday: Closed"
+      },
+      "schedules": {
+        "adult": [
+          {
+            "time": "10:00am - 11:00am",
+            "monday": {
+              "classes": ["Adults BJJ All Levels"],
+              "display": "Adults BJJ All Levels<br/>10:00 am - 11:00 am"
+            },
+            "tuesday": {
+              "classes": ["No Gi - Adults BJJ All Levels"],
+              "display": "No Gi - Adults BJJ All Levels<br/>10:00 am - 11:00 am"
+            },
+            "wednesday": {
+              "classes": ["Adults BJJ All Levels"],
+              "display": "Adults BJJ All Levels<br/>10:00 am - 11:00 am"
+            },
+            "thursday": {
+              "classes": ["Adults BJJ All Levels"],
+              "display": "Adults BJJ All Levels<br/>10:00 am - 11:00 am"
+            },
+            "friday": {
+              "classes": ["Adults BJJ All Levels"],
+              "display": "Adults BJJ All Levels<br/>10:00 am - 11:00 am"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "11:00am - 12:00pm",
+            "monday": {
+              "classes": ["Muay Thai"],
+              "display": "Muay Thai<br/>11:00 am - 12:00 pm"
+            },
+            "tuesday": {
+              "classes": ["Muay Thai"],
+              "display": "Muay Thai<br/>11:00 am - 12:00 pm"
+            },
+            "wednesday": {
+              "classes": ["Muay Thai"],
+              "display": "Muay Thai<br/>11:00 am - 12:00 pm"
+            },
+            "thursday": {
+              "classes": ["Muay Thai"],
+              "display": "Muay Thai<br/>11:00 am - 12:00 pm"
+            },
+            "friday": {
+              "classes": ["Muay Thai"],
+              "display": "Muay Thai<br/>11:00 am - 12:00 pm"
+            },
+            "saturday": {
+              "classes": ["BJJ Open Mat"],
+              "display": "BJJ Open Mat<br/>11:00 am - 12:00 pm"
+            }
+          },
+          {
+            "time": "12:00pm - 1:00pm",
+            "monday": {
+              "classes": ["Adults BJJ All Levels"],
+              "display": "Adults BJJ All Levels<br/>12:00 pm - 1:00 pm"
+            },
+            "tuesday": {
+              "classes": ["No Gi - Adults BJJ All Levels"],
+              "display": "No Gi - Adults BJJ All Levels<br/>12:00 pm - 1:00 pm"
+            },
+            "wednesday": {
+              "classes": ["Adults BJJ All Levels"],
+              "display": "Adults BJJ All Levels<br/>12:00 pm - 1:00 pm"
+            },
+            "thursday": {
+              "classes": ["Adults BJJ All Levels"],
+              "display": "Adults BJJ All Levels<br/>12:00 pm - 1:00 pm"
+            },
+            "friday": {
+              "classes": ["Adults BJJ All Levels"],
+              "display": "Adults BJJ All Levels<br/>12:00 pm - 1:00 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "6:30pm - 7:30pm",
+            "monday": {
+              "classes": ["Teens / Adults BJJ Fundamentals"],
+              "display": "Teens / Adults BJJ Fundamentals<br/>6:30 pm - 7:30 pm"
+            },
+            "tuesday": {
+              "classes": ["No Gi - Teens / Adults BJJ Fundamentals"],
+              "display": "No Gi - Teens / Adults BJJ Fundamentals<br/>6:30 pm - 7:30 pm"
+            },
+            "wednesday": {
+              "classes": ["Teens / Adults BJJ Fundamentals"],
+              "display": "Teens / Adults BJJ Fundamentals<br/>6:30 pm - 7:30 pm"
+            },
+            "thursday": {
+              "classes": ["Teens / Adults BJJ Fundamentals"],
+              "display": "Teens / Adults BJJ Fundamentals<br/>6:30 pm - 7:30 pm"
+            },
+            "friday": {
+              "classes": ["Teens / Adults BJJ Fundamentals"],
+              "display": "Teens / Adults BJJ Fundamentals<br/>6:30 pm - 7:30 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "7:30pm - 8:30pm",
+            "monday": {
+              "classes": ["Adults BJJ All Levels"],
+              "display": "Adults BJJ All Levels<br/>7:30 pm - 8:30 pm"
+            },
+            "tuesday": {
+              "classes": ["No Gi - Adults BJJ All Levels"],
+              "display": "No Gi - Adults BJJ All Levels<br/>7:30 pm - 8:30 pm"
+            },
+            "wednesday": {
+              "classes": ["Adults BJJ All Levels"],
+              "display": "Adults BJJ All Levels<br/>7:30 pm - 8:30 pm"
+            },
+            "thursday": {
+              "classes": ["Adults BJJ All Levels"],
+              "display": "Adults BJJ All Levels<br/>7:30 pm - 8:30 pm"
+            },
+            "friday": {
+              "classes": ["Adults BJJ All Levels"],
+              "display": "Adults BJJ All Levels<br/>7:30 pm - 8:30 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          }
+        ],
+        "kids": [
+          {
+            "time": "10:00am - 11:00am",
+            "monday": {
+              "classes": [],
+              "display": "-"
+            },
+            "tuesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "wednesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "thursday": {
+              "classes": [],
+              "display": "-"
+            },
+            "friday": {
+              "classes": [],
+              "display": "-"
+            },
+            "saturday": {
+              "classes": ["Kids BJJ - All Ages"],
+              "display": "Kids BJJ - All Ages<br/>10:00 am - 11:00 am"
+            }
+          },
+          {
+            "time": "4:45pm - 5:30pm",
+            "monday": {
+              "classes": ["Kids BJJ (4-7 Years Old)"],
+              "display": "Kids BJJ (4 - 7 Years Old)<br/>4:45 pm - 5:30 pm"
+            },
+            "tuesday": {
+              "classes": ["No Gi - Kids BJJ (4-7 Years Old)"],
+              "display": "No Gi - Kids BJJ (4 - 7 Years Old)<br/>4:45 pm - 5:30 pm"
+            },
+            "wednesday": {
+              "classes": ["Kids BJJ (4-7 Years Old)"],
+              "display": "Kids BJJ (4 - 7 Years Old)<br/>4:45 pm - 5:30 pm"
+            },
+            "thursday": {
+              "classes": ["Kids BJJ (4-7 Years Old)"],
+              "display": "Kids BJJ (4 - 7 Years Old)<br/>4:45 pm - 5:30 pm"
+            },
+            "friday": {
+              "classes": ["Kids BJJ (4-7 Years Old)"],
+              "display": "Kids BJJ (4 - 7 Years Old)<br/>4:45 pm - 5:30 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "5:30pm - 6:30pm",
+            "monday": {
+              "classes": ["Kids BJJ (8-12 Years Old)"],
+              "display": "Kids BJJ (8 - 12 Years Old)<br/>5:30 pm - 6:30 pm"
+            },
+            "tuesday": {
+              "classes": ["No Gi - Kids BJJ (8-12 Years Old)"],
+              "display": "No Gi - Kids BJJ (8 - 12 Years Old)<br/>5:30 pm - 6:30 pm"
+            },
+            "wednesday": {
+              "classes": ["Kids BJJ (8-12 Years Old)"],
+              "display": "Kids BJJ (8 - 12 Years Old)<br/>5:30 pm - 6:30 pm"
+            },
+            "thursday": {
+              "classes": ["Kids BJJ (8-12 Years Old)"],
+              "display": "Kids BJJ (8 - 12 Years Old)<br/>5:30 pm - 6:30 pm"
+            },
+            "friday": {
+              "classes": ["Kids BJJ (8-12 Years Old)"],
+              "display": "Kids BJJ (8 - 12 Years Old)<br/>5:30 pm - 6:30 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          }
+        ]
+      }
+    },
+    "lake-nona": {
+      "id": "lake-nona",
+      "name": "Lake Nona",
+      "slug": "lake-nona",
+      "address": {
+        "street": "9968 Tagore Pl",
+        "city": "Orlando",
+        "state": "FL",
+        "zip": "32827",
+        "full": "9968 Tagore Pl, Orlando, FL 32827"
+      },
+      "contact": {
+        "phone": "(407) 203-6581",
+        "email": "lakenona@fabinrosabjj.com"
+      },
+      "social": {
+        "instagram": "@frbjj_lake_nona",
+        "instagram_url": "https://www.instagram.com/frbjj_lake_nona"
+      },
+      "hours": {
+        "weekday": "Monday - Friday: 6:30 AM - 9:00 PM",
+        "saturday": "Saturday: 11:00 AM - 2:00 PM",
+        "sunday": "Sunday: Closed"
+      },
+      "schedules": {
+        "adult": [
+          {
+            "time": "6:30am - 7:30am",
+            "monday": {
+              "classes": [],
+              "display": "-"
+            },
+            "tuesday": {
+              "classes": ["No-Gi Grappling"],
+              "display": "No-Gi Grappling<br/>6:30 am - 7:30 am"
+            },
+            "wednesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "thursday": {
+              "classes": ["No-Gi Grappling"],
+              "display": "No-Gi Grappling<br/>6:30 am - 7:30 am"
+            },
+            "friday": {
+              "classes": [],
+              "display": "-"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "11:00am - 12:30pm",
+            "monday": {
+              "classes": ["BJJ All Levels Gi"],
+              "display": "BJJ All Levels Gi<br/>11:00 am - 12:30 pm"
+            },
+            "tuesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "wednesday": {
+              "classes": ["BJJ All Levels Gi"],
+              "display": "BJJ All Levels Gi<br/>11:00 am - 12:30 pm"
+            },
+            "thursday": {
+              "classes": [],
+              "display": "-"
+            },
+            "friday": {
+              "classes": ["BJJ All Levels Gi"],
+              "display": "BJJ All Levels Gi<br/>11:00 am - 12:30 pm"
+            },
+            "saturday": {
+              "classes": ["No-Gi Fundamentals"],
+              "display": "No-Gi Fundamentals<br/>11:00 am - 12:00 pm"
+            }
+          },
+          {
+            "time": "12:00pm - 2:00pm",
+            "monday": {
+              "classes": [],
+              "display": "-"
+            },
+            "tuesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "wednesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "thursday": {
+              "classes": [],
+              "display": "-"
+            },
+            "friday": {
+              "classes": [],
+              "display": "-"
+            },
+            "saturday": {
+              "classes": ["Open Mat"],
+              "display": "Open Mat<br/>12:00 pm - 2:00 pm"
+            }
+          },
+          {
+            "time": "6:30pm - 8:00pm",
+            "monday": {
+              "classes": ["BJJ Fundamentals Gi", "Muay Thai Kickboxing"],
+              "display": "BJJ Fundamentals Gi, Muay Thai Kickboxing<br/>6:30 pm - 7:30 pm"
+            },
+            "tuesday": {
+              "classes": ["BJJ Fundamentals No-Gi"],
+              "display": "BJJ Fundamentals No-Gi<br/>6:30 pm - 7:30 pm"
+            },
+            "wednesday": {
+              "classes": ["BJJ Fundamentals", "Muay Thai Kickboxing"],
+              "display": "BJJ Fundamentals, Muay Thai Kickboxing<br/>6:30 pm - 7:30 pm"
+            },
+            "thursday": {
+              "classes": ["BJJ Fundamentals Gi"],
+              "display": "BJJ Fundamentals Gi<br/>6:30 pm - 8:00 pm"
+            },
+            "friday": {
+              "classes": ["Muay Thai/Kick Boxing"],
+              "display": "Muay Thai/Kick Boxing<br/>6:30 pm - 7:30 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "7:30pm - 9:00pm",
+            "monday": {
+              "classes": [],
+              "display": "-"
+            },
+            "tuesday": {
+              "classes": ["No-Gi Grappling"],
+              "display": "No-Gi Grappling<br/>7:30 pm - 9:00 pm"
+            },
+            "wednesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "thursday": {
+              "classes": ["Open Mat"],
+              "display": "Open Mat<br/>8:00 pm - 9:00 pm"
+            },
+            "friday": {
+              "classes": ["No-Gi Leg Locks"],
+              "display": "No-Gi Leg Locks<br/>7:30 pm - 9:00 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          }
+        ],
+        "kids": [
+          {
+            "time": "4:45pm - 5:30pm",
+            "monday": {
+              "classes": ["Little Kids 4-7yrs"],
+              "display": "Little Kids 4-7yrs<br/>4:45 pm - 5:30 pm"
+            },
+            "tuesday": {
+              "classes": ["Little Kids 4-7yrs BJJ (No-Gi)"],
+              "display": "Little Kids 4-7yrs BJJ (No-Gi)<br/>4:45 pm - 5:30 pm"
+            },
+            "wednesday": {
+              "classes": ["Little Kids 4-7yrs"],
+              "display": "Little Kids 4-7yrs<br/>4:45 pm - 5:30 pm"
+            },
+            "thursday": {
+              "classes": ["Little Kids 4-7yrs"],
+              "display": "Little Kids 4-7yrs<br/>4:45 pm - 5:30 pm"
+            },
+            "friday": {
+              "classes": ["Little Kids 4-7yrs BJJ (No-Gi)"],
+              "display": "Little Kids 4-7yrs BJJ (No-Gi)<br/>4:45 pm - 5:30 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "5:30pm - 6:30pm",
+            "monday": {
+              "classes": ["Kids BJJ"],
+              "display": "Kids BJJ<br/>5:30 pm - 6:30 pm"
+            },
+            "tuesday": {
+              "classes": ["Kids BJJ (No-Gi)"],
+              "display": "Kids BJJ (No-Gi)<br/>5:30 pm - 6:30 pm"
+            },
+            "wednesday": {
+              "classes": ["Kids BJJ"],
+              "display": "Kids BJJ<br/>5:30 pm - 6:30 pm"
+            },
+            "thursday": {
+              "classes": ["Kids BJJ"],
+              "display": "Kids BJJ<br/>5:30 pm - 6:30 pm"
+            },
+            "friday": {
+              "classes": ["Kids BJJ (No-Gi)"],
+              "display": "Kids BJJ (No-Gi)<br/>5:30 pm - 6:30 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          }
+        ]
+      }
+    },
+    "altamonte": {
+      "id": "altamonte",
+      "name": "Altamonte Springs",
+      "slug": "altamonte",
+      "address": {
+        "street": "477 E Altamonte Dr",
+        "city": "Altamonte Springs",
+        "state": "FL",
+        "zip": "32701",
+        "full": "477 E Altamonte Dr, Altamonte Springs, FL 32701"
+      },
+      "contact": {
+        "phone": "(407) 960-7646",
+        "email": "altamonte@fabinrosabjj.com"
+      },
+      "social": {
+        "instagram": "@frbjj_altamontesprings",
+        "instagram_url": "https://www.instagram.com/frbjj_altamontesprings"
+      },
+      "hours": {
+        "weekday": "Monday - Friday: 6:30 AM - 9:00 PM",
+        "saturday": "Saturday: 10:30 AM - 1:30 PM",
+        "sunday": "Sunday: Closed"
+      },
+      "schedules": {
+        "adult": [
+          {
+            "time": "6:30am - 7:30am",
+            "monday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>6:30 am - 7:30 am"
+            },
+            "tuesday": {
+              "classes": ["BJJ All Levels", "Muay Thai All Levels"],
+              "display": "BJJ All Levels<br/>6:30 am - 7:30 am<br/><br/>Muay Thai All Levels<br/>6:30 am - 7:30 am"
+            },
+            "wednesday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>6:30 am - 7:30 am"
+            },
+            "thursday": {
+              "classes": ["BJJ All Levels", "Muay Thai All Levels"],
+              "display": "BJJ All Levels<br/>6:30 am - 7:30 am<br/><br/>Muay Thai All Levels<br/>6:30 am - 7:30 am"
+            },
+            "friday": {
+              "classes": ["BJJ NoGi"],
+              "display": "BJJ NoGi<br/>6:30 am - 7:30 am"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "11:00am - 12:00pm",
+            "monday": {
+              "classes": [],
+              "display": "-"
+            },
+            "tuesday": {
+              "classes": ["Muay Thai All Levels"],
+              "display": "Muay Thai All Levels<br/>11:00 am - 12:00 pm"
+            },
+            "wednesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "thursday": {
+              "classes": ["Muay Thai All Levels"],
+              "display": "Muay Thai All Levels<br/>11:00 am - 12:00 pm"
+            },
+            "friday": {
+              "classes": [],
+              "display": "-"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "12:00pm - 1:30pm",
+            "monday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>12:00 pm - 1:30 pm"
+            },
+            "tuesday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>12:00 pm - 1:30 pm"
+            },
+            "wednesday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>12:00 pm - 1:30 pm"
+            },
+            "thursday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>12:00 pm - 1:30 pm"
+            },
+            "friday": {
+              "classes": ["NOGi All Levels"],
+              "display": "NOGi All Levels<br/>12:00 pm - 1:30 pm"
+            },
+            "saturday": {
+              "classes": ["Open Mat"],
+              "display": "Open Mat<br/>12:00 pm - 1:30 pm"
+            }
+          },
+          {
+            "time": "5:30pm - 6:30pm",
+            "monday": {
+              "classes": ["Muay Thai All Levels"],
+              "display": "Muay Thai All Levels<br/>5:30 pm - 6:30 pm"
+            },
+            "tuesday": {
+              "classes": ["Muay Thai All Levels"],
+              "display": "Muay Thai All Levels<br/>5:30 pm - 6:30 pm"
+            },
+            "wednesday": {
+              "classes": ["Muay Thai All Levels"],
+              "display": "Muay Thai All Levels<br/>5:30 pm - 6:30 pm"
+            },
+            "thursday": {
+              "classes": ["Muay Thai All Levels"],
+              "display": "Muay Thai All Levels<br/>5:30 pm - 6:30 pm"
+            },
+            "friday": {
+              "classes": ["Muay Thai All Levels"],
+              "display": "Muay Thai All Levels<br/>5:30 pm - 6:30 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "6:30pm - 7:30pm",
+            "monday": {
+              "classes": ["BJJ Fundamentals"],
+              "display": "BJJ Fundamentals<br/>6:30 pm - 7:30 pm"
+            },
+            "tuesday": {
+              "classes": ["BJJ Fundamentals"],
+              "display": "BJJ Fundamentals<br/>6:30 pm - 7:30 pm"
+            },
+            "wednesday": {
+              "classes": ["BJJ Fundamentals"],
+              "display": "BJJ Fundamentals<br/>6:30 pm - 7:30 pm"
+            },
+            "thursday": {
+              "classes": ["BJJ Fundamentals"],
+              "display": "BJJ Fundamentals<br/>6:30 pm - 7:30 pm"
+            },
+            "friday": {
+              "classes": ["NOGI Fundamentals"],
+              "display": "NOGI Fundamentals<br/>6:30 pm - 7:30 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "7:30pm - 9:00pm",
+            "monday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>7:30 pm - 9:00 pm"
+            },
+            "tuesday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>7:30 pm - 9:00 pm"
+            },
+            "wednesday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>7:30 pm - 9:00 pm"
+            },
+            "thursday": {
+              "classes": ["BJJ All Levels"],
+              "display": "BJJ All Levels<br/>7:30 pm - 9:00 pm"
+            },
+            "friday": {
+              "classes": ["NOGI All Levels"],
+              "display": "NOGI All Levels<br/>7:30 pm - 9:00 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          }
+        ],
+        "kids": [
+          {
+            "time": "10:30am - 11:30am",
+            "monday": {
+              "classes": [],
+              "display": "-"
+            },
+            "tuesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "wednesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "thursday": {
+              "classes": [],
+              "display": "-"
+            },
+            "friday": {
+              "classes": [],
+              "display": "-"
+            },
+            "saturday": {
+              "classes": ["Kids BJJ All Ages"],
+              "display": "Kids BJJ All Ages<br/>10:30 am - 11:30 am"
+            }
+          },
+          {
+            "time": "4:00pm - 4:45pm",
+            "monday": {
+              "classes": [],
+              "display": "-"
+            },
+            "tuesday": {
+              "classes": ["Kids BJJ (3+ years)"],
+              "display": "Kids BJJ (3+ years)<br/>4:00 pm - 4:45 pm"
+            },
+            "wednesday": {
+              "classes": [],
+              "display": "-"
+            },
+            "thursday": {
+              "classes": ["Kids BJJ (3+ years)"],
+              "display": "Kids BJJ (3+ years)<br/>4:00 pm - 4:45 pm"
+            },
+            "friday": {
+              "classes": [],
+              "display": "-"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "4:45pm - 5:30pm",
+            "monday": {
+              "classes": ["Kids BJJ (4-7 years)"],
+              "display": "Kids BJJ (4-7 years)<br/>4:45 pm - 5:30 pm"
+            },
+            "tuesday": {
+              "classes": ["Kids BJJ (4-7 years)", "Kids Muay Thai (8-13)"],
+              "display": "Kids BJJ (4-7 years)<br/>4:45 pm - 5:30 pm<br/><br/>Kids Muay Thai (8-13)<br/>4:45 pm - 5:30 pm"
+            },
+            "wednesday": {
+              "classes": ["Kids BJJ (4-7 years)"],
+              "display": "Kids BJJ (4-7 years)<br/>4:45 pm - 5:30 pm"
+            },
+            "thursday": {
+              "classes": ["Kids BJJ (4-7 years)", "Kids Muay Thai (8-13)"],
+              "display": "Kids BJJ (4-7 years)<br/>4:45 pm - 5:30 pm<br/><br/>Kids Muay Thai (8-13)<br/>4:45 pm - 5:30 pm"
+            },
+            "friday": {
+              "classes": ["Kids NOGI (4-7 years)"],
+              "display": "Kids NOGI (4-7 years)<br/>4:45 pm - 5:30 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          },
+          {
+            "time": "5:30pm - 6:30pm",
+            "monday": {
+              "classes": ["Kids BJJ (8-13 years)"],
+              "display": "Kids BJJ (8-13 years)<br/>5:30 pm - 6:30 pm"
+            },
+            "tuesday": {
+              "classes": ["Kids BJJ (8-13 years)"],
+              "display": "Kids BJJ (8-13 years)<br/>5:30 pm - 6:30 pm"
+            },
+            "wednesday": {
+              "classes": ["Kids BJJ (8-13 years)"],
+              "display": "Kids BJJ (8-13 years)<br/>5:30 pm - 6:30 pm"
+            },
+            "thursday": {
+              "classes": ["Kids BJJ (8-13 years)"],
+              "display": "Kids BJJ (8-13 years)<br/>5:30 pm - 6:30 pm"
+            },
+            "friday": {
+              "classes": ["Kids NOGI (8-13 years)"],
+              "display": "Kids NOGI (8-13 years)<br/>5:30 pm - 6:30 pm"
+            },
+            "saturday": {
+              "classes": [],
+              "display": "-"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
