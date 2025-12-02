@@ -41,9 +41,78 @@
             opacity: 1;
         }
 
+        .bg-image img {
+            filter: grayscale(100%);
+            transition: filter 0.8s ease;
+        }
+
+        .bg-image.visible img {
+            filter: grayscale(0%);
+        }
+
         .program-content {
             backdrop-filter: blur(4px);
             background: rgba(0, 0, 0, 0.7);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 9999;
+            overflow-y: auto;
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: #1a1a1a;
+            border: 2px solid #D4AF37;
+            border-radius: 12px;
+            max-width: 900px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            animation: modalSlideIn 0.3s ease;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-close {
+            position: sticky;
+            top: 0;
+            right: 0;
+            float: right;
+            font-size: 32px;
+            font-weight: bold;
+            color: #D4AF37;
+            cursor: pointer;
+            z-index: 10000;
+            background: #1a1a1a;
+            padding: 10px 20px;
+            border-radius: 0 12px 0 0;
+        }
+
+        .modal-close:hover {
+            color: #FFD700;
         }
     </style>
 </head>
@@ -99,9 +168,9 @@
     </section>
 
     <!-- Adult BJJ Section -->
-    <section id="adult-bjj" class="relative h-[400px] flex items-center overflow-hidden">
+    <section id="adult-bjj" class="relative h-[600px] flex items-center overflow-hidden">
         <div class="absolute inset-0 bg-image">
-            <img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?w=1600&h=400&fit=crop" alt="Adult BJJ" class="w-full h-full object-cover">
+            <img src="assets/images/programs/adult-bjj-bnn.jpg" alt="Adult BJJ" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black opacity-40"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -111,15 +180,18 @@
                     <p class="text-gray-200 text-lg leading-relaxed">
                         Are you interested in adult BJJ classes in Orlando, Florida? If so, Fabin Rosa BJJ has a variety of classes to choose from. As you learn the skills and techniques, you will grow in physical strength and in understanding the unique history of Brazilian Jiu-Jitsu. Taking classes in this judgment-free environment is a great way to experience the benefits of learning a new craft while having fun.
                     </p>
+                    <button onclick="openModal('adult-bjj')" class="mt-4 px-6 py-2 bg-gold-500 text-black font-semibold rounded hover:bg-gold-400 transition-colors">
+                        View More
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Kids BJJ Section -->
-    <section id="kids-bjj" class="relative h-[400px] flex items-center overflow-hidden">
+    <section id="kids-bjj" class="relative h-[600px] flex items-center overflow-hidden">
         <div class="absolute inset-0 bg-image">
-            <img src="https://images.unsplash.com/photo-1554344728-7758a2c2c6e5?w=1600&h=400&fit=crop" alt="Kids BJJ" class="w-full h-full object-cover">
+            <img src="assets/images/programs/kids-bjj-bnn-1.jpg" alt="Kids BJJ" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black opacity-40"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-end">
@@ -129,15 +201,18 @@
                     <p class="text-gray-200 text-lg leading-relaxed">
                         Are you considering an extracurricular program like Brazilian Jiu-Jitsu for your child? There are many BJJ gyms around central Florida, but ours offers opportunities for kids near you. Fabin Rosa Brazilian Jiu-Jitsu offers classes for children in Orlando, FL, and the nearby areas. When you're looking for an activity that will encourage self-confidence and train in self-defense techniques, we have something for every age level.
                     </p>
+                    <button onclick="openModal('kids-bjj')" class="mt-4 px-6 py-2 bg-gold-500 text-black font-semibold rounded hover:bg-gold-400 transition-colors">
+                        View More
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FR Fit Section -->
-    <section id="fr-fit" class="relative h-[400px] flex items-center overflow-hidden">
+    <section id="fr-fit" class="relative h-[600px] flex items-center overflow-hidden">
         <div class="absolute inset-0 bg-image">
-            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1600&h=400&fit=crop" alt="FR Fit" class="w-full h-full object-cover">
+            <img src="assets/images/programs/fr_fit.jpg" alt="FR Fit" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black opacity-40"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -147,15 +222,18 @@
                     <p class="text-gray-200 text-lg leading-relaxed">
                         If you are searching for a new activity to try out in Orlando, Florida, look no further than Fabin Rosa Brazilian Jiu-Jitsu. We offer a wide variety of martial arts classes, and we proudly offer FR Fit classes to increase physical fitness. When searching for Jiu-Jitsu gyms near you, think about coming in and trying out a free class or gym session and see if our martial arts school is for you!
                     </p>
+                    <button onclick="openModal('fr-fit')" class="mt-4 px-6 py-2 bg-gold-500 text-black font-semibold rounded hover:bg-gold-400 transition-colors">
+                        View More
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- MMA Section -->
-    <section id="mma" class="relative h-[400px] flex items-center overflow-hidden">
+    <section id="mma" class="relative h-[600px] flex items-center overflow-hidden">
         <div class="absolute inset-0 bg-image">
-            <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=1600&h=400&fit=crop" alt="MMA" class="w-full h-full object-cover">
+            <img src="assets/images/programs/mma-bnn.jpg" alt="MMA" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black opacity-40"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-end">
@@ -165,15 +243,18 @@
                     <p class="text-gray-200 text-lg leading-relaxed">
                         If you're looking for an encouraging atmosphere to learn mixed martial arts in Orlando, FL, Fabin Rosa Brazilian Jiu-Jitsu is one of the best MMA gyms for you. We believe in teaching the purest forms of MMA in an environment where students of all ages can enjoy learning. For over 20 years, we have provided the community with martial arts training from experienced teachers in a friendly and encouraging atmosphere.
                     </p>
+                    <button onclick="openModal('mma')" class="mt-4 px-6 py-2 bg-gold-500 text-black font-semibold rounded hover:bg-gold-400 transition-colors">
+                        View More
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Muay Thai & Kickboxing Section -->
-    <section id="muay-thai" class="relative h-[400px] flex items-center overflow-hidden">
+    <section id="muay-thai" class="relative h-[600px] flex items-center overflow-hidden">
         <div class="absolute inset-0 bg-image">
-            <img src="https://images.unsplash.com/photo-1555597408-26bc8e548a46?w=1600&h=400&fit=crop" alt="Muay Thai" class="w-full h-full object-cover">
+            <img src="assets/images/programs/muay-1.jpg" alt="Muay Thai & Kickboxing" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black opacity-40"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -183,15 +264,18 @@
                     <p class="text-gray-200 text-lg leading-relaxed">
                         Are you interested in taking up a new physical activity that gets you out of your comfort zone? Well, there is nothing like taking Kickboxing & Muay Thai classes at the Fabin Rosa Brazilian Jiu-Jitsu gym that could be near you in Orlando, FL! Learn how to really defend yourself in any situation while getting a great workout in and making new friends. Up your self-confidence while learning self-defense.
                     </p>
+                    <button onclick="openModal('muay-thai')" class="mt-4 px-6 py-2 bg-gold-500 text-black font-semibold rounded hover:bg-gold-400 transition-colors">
+                        View More
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Preschool BJJ Section -->
-    <section id="preschool-bjj" class="relative h-[400px] flex items-center overflow-hidden">
+    <section id="preschool-bjj" class="relative h-[600px] flex items-center overflow-hidden">
         <div class="absolute inset-0 bg-image">
-            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1600&h=400&fit=crop" alt="Preschool BJJ" class="w-full h-full object-cover">
+            <img src="assets/images/programs/pre-school.jpg" alt="Preschool BJJ" class="w-full h-full object-cover" style="object-position: center 60%;">
             <div class="absolute inset-0 bg-black opacity-40"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-end">
@@ -201,15 +285,18 @@
                     <p class="text-gray-200 text-lg leading-relaxed">
                         Are you looking for a new sport to try for you or a family member in Orlando, FL? Fabin Rosa BJJ offers classes for all ages, and we are excited to provide preschool BJJ classes as well. If you're looking for a new education program for your child, consider placing them in our BJJ preschool program near you, instead of or alongside traditional preschool youth sports.
                     </p>
+                    <button onclick="openModal('preschool-bjj')" class="mt-4 px-6 py-2 bg-gold-500 text-black font-semibold rounded hover:bg-gold-400 transition-colors">
+                        View More
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Self Defense Section -->
-    <section id="self-defense" class="relative h-[400px] flex items-center overflow-hidden">
+    <section id="self-defense" class="relative h-[600px] flex items-center overflow-hidden">
         <div class="absolute inset-0 bg-image">
-            <img src="https://images.unsplash.com/photo-1519505907962-0a6cb0167c73?w=1600&h=400&fit=crop" alt="Self Defense" class="w-full h-full object-cover">
+            <img src="assets/images/programs/self-bnn.jpg" alt="Self Defense" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black opacity-40"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -219,15 +306,18 @@
                     <p class="text-gray-200 text-lg leading-relaxed">
                         Have you found yourself in some scary situations lately? Feeling like you couldn't protect or defend yourself? Looking into women's self-defense classes near you? Perhaps it's time you take advantage of Fabin Rosa's BJJ Self-defense opportunities in Orlando, Florida! Learn how to effortlessly take down your opponent in a realistic attack situation and how to protect yourself in the process.
                     </p>
+                    <button onclick="openModal('self-defense')" class="mt-4 px-6 py-2 bg-gold-500 text-black font-semibold rounded hover:bg-gold-400 transition-colors">
+                        View More
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Women's Only BJJ Section -->
-    <section id="womens-bjj" class="relative h-[400px] flex items-center overflow-hidden">
+    <section id="womens-bjj" class="relative h-[600px] flex items-center overflow-hidden">
         <div class="absolute inset-0 bg-image">
-            <img src="https://images.unsplash.com/photo-1611672585731-fa10603fb9e0?w=1600&h=400&fit=crop" alt="Women's BJJ" class="w-full h-full object-cover">
+            <img src="assets/images/programs/womens_bjj.jpg" alt="Women's BJJ" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black opacity-40"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-end">
@@ -237,15 +327,18 @@
                     <p class="text-gray-200 text-lg leading-relaxed">
                         At Fabin Rosa BJJ in Orlando, our goal is to provide a safe and encouraging gym culture where students, including women, can learn self-defensive skills. Whether you're looking to increase physical fitness or learn a new martial art, we offer women-only BJJ classes taught by highly qualified instructors. If you're looking into one of the best Brazilian Jiu-Jitsu (BJJ) gyms near you, our academy is here to meet your fitness needs!
                     </p>
+                    <button onclick="openModal('womens-bjj')" class="mt-4 px-6 py-2 bg-gold-500 text-black font-semibold rounded hover:bg-gold-400 transition-colors">
+                        View More
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Competition Team Section -->
-    <section id="competition-team" class="relative h-[400px] flex items-center overflow-hidden">
+    <section id="competition-team" class="relative h-[600px] flex items-center overflow-hidden">
         <div class="absolute inset-0 bg-image">
-            <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=1600&h=400&fit=crop" alt="Competition Team" class="w-full h-full object-cover">
+            <img src="assets/images/programs/pan-champ.jpg" alt="Competition Team" class="w-full h-full object-cover" style="object-position: center 40%;">
             <div class="absolute inset-0 bg-black opacity-40"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -255,6 +348,9 @@
                     <p class="text-gray-200 text-lg leading-relaxed">
                         Our Competition Team program is a cutting-edge and dynamic training experience designed to mold dedicated athletes into formidable Brazilian Jiu Jitsu competitors. Led by our accomplished black belt instructors, the program offers a carefully crafted curriculum that covers all aspects of BJJ. With a strong focus on live sparring and simulated competition scenarios, our team members will be well-prepared to showcase their prowess in local and national tournaments.
                     </p>
+                    <button onclick="openModal('competition-team')" class="mt-4 px-6 py-2 bg-gold-500 text-black font-semibold rounded hover:bg-gold-400 transition-colors">
+                        View More
+                    </button>
                 </div>
             </div>
         </div>
@@ -301,7 +397,296 @@
         </div>
     </footer>
 
+    <!-- Modals for each program -->
+    <div id="modal-adult-bjj" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('adult-bjj')">&times;</span>
+            <div class="p-8">
+                <h2 class="text-4xl font-bold mb-6 text-gold-500">Adult BJJ</h2>
+                <div class="text-gray-200 space-y-4">
+                    <p class="text-lg leading-relaxed">Our instructors understand what it's like to try something new for the first time. They work with students of all ages and levels here in our community and meet fitness needs at each level. Our class goals include meeting you where you are and encouraging you to master each skill as you move forward on your journey.</p>
+                    <p class="text-lg leading-relaxed">Taking classes at our gym will help you increase your knowledge of Brazilian Jiu-Jitsu as you engage in our classes. The techniques you learn will give you the confidence you need to handle situations in the classroom and other areas of your life.</p>
+                    
+                    <h3 class="text-2xl font-bold mt-6 mb-3 text-gold-400">Benefits Of Adult BJJ Classes</h3>
+                    <p class="text-lg leading-relaxed">It can feel challenging when you're learning a new skill. However, we have an experienced group of dedicated instructors who will work with you one-on-one to accomplish your goals. We are here to help you increase your physical fitness as you learn a new martial art form. Adult BJJ classes offer a wide range of benefits, such as:</p>
+                    
+                    <ul class="list-disc list-inside space-y-2 text-lg ml-4">
+                        <li>Achieve sharper mental awareness</li>
+                        <li>Reduce anxiety and stress</li>
+                        <li>Gain greater physical strength</li>
+                        <li>Deepen your self-confidence</li>
+                        <li>Help you practice patience</li>
+                        <li>Learn self-defense techniques</li>
+                    </ul>
+                    
+                    <p class="text-lg leading-relaxed mt-4">These are just a few physical and mental benefits of learning adult Brazilian Jiu-Jitsu at our gym. You will become more comfortable learning the art form as you learn skills and techniques, including gripping, proper breathing, joint locks, and more. From reduced anxiety to increased physical fitness, adult BJJ classes are perfect for any adult.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-kids-bjj" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('kids-bjj')">&times;</span>
+            <div class="p-8">
+                <h2 class="text-4xl font-bold mb-6 text-gold-500">Kids BJJ</h2>
+                <div class="text-gray-200 space-y-4">
+                    <h3 class="text-2xl font-bold mb-3 text-gold-400">We Offer Brazilian Jiu-Jitsu Programs For Kids</h3>
+                    <p class="text-lg leading-relaxed">Fabin Rosa Brazilian Jiu-Jitsu is happy to provide BJJ classes for all ages, including kids' programs that encourage fundamental skills at an early age. Our classes encourage all personality types to come out of their comfort zone and engage in this fun and exciting gym atmosphere. Children will experience many benefits by training at our gym. Some of these benefits include:</p>
+                    
+                    <ul class="list-disc list-inside space-y-2 text-lg ml-4">
+                        <li>Increased social skills</li>
+                        <li>Hand-eye coordination</li>
+                        <li>Following instructions</li>
+                        <li>Less anxiety</li>
+                        <li>Better physical endurance</li>
+                        <li>Self-confidence</li>
+                        <li>Handling social issues</li>
+                    </ul>
+                    
+                    <p class="text-lg leading-relaxed mt-4">Our devoted instructors carefully work to help each child learn at their own pace. No matter what age our kids are, they all experience the benefits of learning BJJ techniques.</p>
+                    
+                    <h3 class="text-2xl font-bold mt-6 mb-3 text-gold-400">Ages 3-5</h3>
+                    <p class="text-lg leading-relaxed">As our youngest age group, kids ages 3-5 will learn the basics of Brazilian Jiu-Jitsu. At this age level, our instructors focus on mobility and drills that teach coordination. Children in this group will learn more about the technique. Starting with a strong foundation is essential for every stage in our programs.</p>
+                    
+                    <h3 class="text-2xl font-bold mt-6 mb-3 text-gold-400">Ages 5-7</h3>
+                    <p class="text-lg leading-relaxed">Our next kids' BJJ program level consists of children ages 5-7. Even if the child did not start in our younger class, they will still soon learn the foundational techniques and skills necessary to move forward. In this class, we continue with an emphasis on technique and movement, where they will also learn ground technique and takedowns.</p>
+                    
+                    <h3 class="text-2xl font-bold mt-6 mb-3 text-gold-400">Ages 8-13</h3>
+                    <p class="text-lg leading-relaxed">Whether students begin at this level or are younger, they will all learn increased endurance training at this stage. In this class, students ages 8-13 will learn BJJ skills in a safe and instructive environment. Here, instructors guide students in kicking and punching techniques. Students will engage in increased physical activity that will strengthen their cardiovascular system while boosting their endurance.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-fr-fit" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('fr-fit')">&times;</span>
+            <div class="p-8">
+                <h2 class="text-4xl font-bold mb-6 text-gold-500">FR Fit</h2>
+                <div class="text-gray-200 space-y-4">
+                    <h3 class="text-2xl font-bold mb-3 text-gold-400">FR Fit Classes VS Other Fitness Classes</h3>
+                    <p class="text-lg leading-relaxed">Here at Fabin Rosa, our goal is to create an exciting and fun learning environment for all students. Our wide variety of classes encourages students of all ages to increase their physical fitness through their personal martial arts journey. From Brazilian Jiu-Jitsu, Muay Thai, self-defense, and even kids' classes, we have a class for all experience levels. We have a team of highly experienced instructors who meet each student where they are and guide them through each phase of the practice.</p>
+                    
+                    <p class="text-lg leading-relaxed">FR Fit classes are similar to Crossfit-style classes in that they require high-intensity training for strength and conditioning. While other fitness classes may focus only on cardiovascular activity or weight training, our FR Fit classes focus on all aspects of training to boost overall health and wellness, similar to our Jiu-Jitsu and self-defense class options.</p>
+                    
+                    <h3 class="text-2xl font-bold mt-6 mb-3 text-gold-400">Training In FR Fit Classes</h3>
+                    <p class="text-lg leading-relaxed">When you train at our gym, you will learn techniques you can use in all areas of life. Taking FR Fit classes will help you increase in physical fitness and mental awareness as you boost your endurance and strength. Our instructors ensure students safely learn each skill in these classes to avoid injury.</p>
+                    
+                    <p class="text-lg leading-relaxed">While we only offer these classes here at our Orlando location, many Jiu-Jitsu students from our Altamonte location travel over to experience our FR Fit classes. Even some of our students who attend our martial arts classes include FR Fit classes into their schedule for additional fitness benefits. If you're considering a change to your fitness routine, you will definitely benefit from trying these classes at our gym.</p>
+                    
+                    <h3 class="text-2xl font-bold mt-6 mb-3 text-gold-400">Benefits Of Training With Our Gym</h3>
+                    <p class="text-lg leading-relaxed">Our instructors enjoy teaching a variety of levels in our FR Fit classes. If you're not familiar with this fitness style, don't worry. Every instructor at our gym is ready to help you feel comfortable regardless of your fitness level.</p>
+                    
+                    <p class="text-lg leading-relaxed">There are many benefits of training with our gym. Whether you're taking FR Fit classes or one of our Brazilian Jiu-Jitsu classes, we want you to enjoy the benefits of your fitness journey. The class structure here is designed for students of any experience level. Our class offerings provide benefits, including:</p>
+                    
+                    <ul class="list-disc list-inside space-y-2 text-lg ml-4">
+                        <li>Better social skills</li>
+                        <li>Self-defense techniques</li>
+                        <li>Increased mental awareness</li>
+                        <li>Builds muscle and strength</li>
+                        <li>Supports the health of all body systems</li>
+                        <li>Relieves stress and anxiety</li>
+                        <li>Promotes better muscle tone and joint health</li>
+                        <li>Shreds fat and builds abdominal muscle</li>
+                    </ul>
+                    
+                    <p class="text-lg leading-relaxed mt-4">These are a few benefits of training with our gym. We invite you to come and see the benefits of taking FR Fit classes with our gym. When you're looking for a new way to get into shape, come join our community.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-mma" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('mma')">&times;</span>
+            <div class="p-8">
+                <h2 class="text-4xl font-bold mb-6 text-gold-500">MMA</h2>
+                <div class="text-gray-200 space-y-4">
+                    <h3 class="text-2xl font-bold mb-3 text-gold-400">Learning MMA Techniques</h3>
+                    <p class="text-lg leading-relaxed">Learning a new art form like mixed martial arts, Brazilian Jiu-Jitsu, or Muay Thai can feel stressful and overwhelming. However, it doesn't have to feel that way. In fact, learning this art form is an exciting opportunity to study more techniques in Brazilian Jiu-Jitsu, Judo, and wrestling, to name a few.</p>
+                    
+                    <p class="text-lg leading-relaxed">Mixed martial arts combines striking and grappling, two fundamental techniques students need to practice this art form. Our experienced instructors will teach students the rules, techniques, principles, and safety of MMA. They work with each student to ensure mastery at every stage of learning. We even offer MMA classes for kids' martial arts.</p>
+                    
+                    <h3 class="text-2xl font-bold mt-6 mb-3 text-gold-400">Striking And Grappling Techniques</h3>
+                    <p class="text-lg leading-relaxed">Our MMA classes focus on techniques first because we believe students must master the proper techniques before moving forward. While we don't teach MMA specifically for self-defense, students will learn how to use these techniques in self-defense situations. Striking and grappling are two primary techniques used in MMA training.</p>
+                    
+                    <p class="text-lg leading-relaxed">There are differences between striking and grappling. While grappling focuses on fighting on the ground, striking includes punching, kicking, or using the elbows to subdue your opponent. Students will learn how to execute these techniques properly in class under the guidance of experienced and compassionate instructors.</p>
+                    
+                    <h3 class="text-2xl font-bold mt-6 mb-3 text-gold-400">Benefits Of MMA Training</h3>
+                    <p class="text-lg leading-relaxed">You don't have to worry about having any previous experience to learn MMA at our gym. Our instructors have the skill and experience to help you begin where you are. Personal training with our gym will provide students with a wide variety of benefits, such as:</p>
+                    
+                    <ul class="list-disc list-inside space-y-2 text-lg ml-4">
+                        <li>Improved mood and energy</li>
+                        <li>Increased cardiovascular health</li>
+                        <li>Less stress and anxiety</li>
+                        <li>Improved confidence and self-awareness</li>
+                        <li>Self-defense skills</li>
+                        <li>Better problem-solving skills</li>
+                        <li>Increased muscle and bone strength</li>
+                    </ul>
+                    
+                    <p class="text-lg leading-relaxed mt-4">These are just a few of the many benefits of learning mixed martial arts. Joining our membership program will increase your mental awareness and improve your physical health. You can visit our Orlando gym at any time to try our classes for free and see the benefits of learning from our instructors.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-muay-thai" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('muay-thai')">&times;</span>
+            <div class="p-8">
+                <h2 class="text-4xl font-bold mb-6 text-gold-500">Muay Thai & Kickboxing</h2>
+                <div class="text-gray-200 space-y-4">
+                    <p class="text-lg leading-relaxed">For those who aren't familiar with these two types of martial arts, there are similarities between Muay Thai and Kickboxing. Muay Thai and Kickboxing are an 8-point striking type of combat. Also known as "The Art of 8 Limbs," they use both hands and feet along with elbows and knees. Muay Thai training requires a tremendous amount of power in its movements, along with the focus and discipline that any other martial art requires.</p>
+                    
+                    <p class="text-lg leading-relaxed">Muay Thai is considered to be a full-body workout and one of the most effective styles of fighting. This martial art first originated in Thailand back in the 13th century. It was made for the soldiers to defend their kingdom as a type of up-close combat. Invented by Nai Khanom Tom, often referred to as "The Father of Muay Thai Training".</p>
+                    
+                    <h3 class="text-2xl font-bold mt-6 mb-3 text-gold-400">Benefits Of Muay Thai & Kickboxing</h3>
+                    <p class="text-lg leading-relaxed">The physical benefits of Muay Thai and Kickboxing include toning and strengthening your body and core. Along with getting rid of stubborn fat and improving your flexibility. Muay Thai is a great way to tone your entire body, as it's considered a full-body workout. Not only will it strengthen your body, but it also improves mobility and cardiovascular conditions as well, which can help you get into the best shape of your life.</p>
+                    
+                    <p class="text-lg leading-relaxed">For the mental benefits of Muay Thai and Kickboxing, you will learn new tools to use to help you stay calm. Many athletes notice that they start thinking strategically and gain confidence as they train and practice more and more. With this type of mental training, you will even experience a boost in mood, which is a direct result of increasing endorphins to help relieve stress, depression, and anxiety! In other words, combat sports like Muay Thai or Kickboxing build mental toughness and self-discipline, as well as physical toughness.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-preschool-bjj" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('preschool-bjj')">&times;</span>
+            <div class="p-8">
+                <h2 class="text-4xl font-bold mb-6 text-gold-500">Preschool BJJ Program</h2>
+                <div class="text-gray-200 space-y-4">
+                    <h3 class="text-2xl font-bold mb-3 text-gold-400">Our Preschool BJJ Program</h3>
+                    <p class="text-lg leading-relaxed">If you're searching for an extracurricular preschool program for your preschool-aged child, we invite you to try our BJJ program. Practicing Brazilian Jiu-Jitsu provides many benefits for all ages, especially younger children. When young kids begin life skills at a young age, they have more time to reap the many physical and cognitive benefits. Their overall health and well-being are off to a great start, and they build confidence in themselves.</p>
+                    
+                    <p class="text-lg leading-relaxed">We are passionate about a healthy and encouraging atmosphere where young children, adolescents, and adults can enjoy a safe environment to learn martial arts. Our program begins with children ages two all the way up to adults. We understand the struggles children face in today's society, and we want to help them face these issues with confidence.</p>
+                    
+                    <h3 class="text-2xl font-bold mt-6 mb-3 text-gold-400">Training With Fabin Rosa</h3>
+                    <p class="text-lg leading-relaxed">We enjoy providing a place where all ages can come and learn the skills of BJJ. Our preschool program consists of smaller class sizes so we can provide more attention for each student. Our goal is to teach younger students the importance of attention, concentration, and teamwork. Our instructors understand each student has unique needs, and they are always willing to meet those needs and help them comfortably learn something new.</p>
+                    
+                    <p class="text-lg leading-relaxed">When students enter any of our locations, they feel comfortable and relaxed enough to enjoy training. Our instructors work carefully with each student to guide them on proper technique while encouraging them to master each phase of learning. We design our program for them to reach beyond their individual comfort zone and try something new.</p>
+                    
+                    <h3 class="text-2xl font-bold mt-6 mb-3 text-gold-400">Benefits Of Preschool BJJ</h3>
+                    <p class="text-lg leading-relaxed">Our gym is proud to have world-class instructors who develop our curriculum and train students of all ages. Our teachers have experience working with kids ages two and up and know how to shape our training programs for each student's needs. Physical activity offers many benefits, especially when it comes to training in martial arts. Brazilian Jiu-Jitsu offers many benefits for students, including:</p>
+                    
+                    <ul class="list-disc list-inside space-y-2 text-lg ml-4">
+                        <li>Increased self-esteem</li>
+                        <li>Better communication skills</li>
+                        <li>Cognitive development</li>
+                        <li>Reduced stress and anxiety</li>
+                        <li>Better hand-eye coordination</li>
+                        <li>Increased physical fitness</li>
+                        <li>Learning self-defense skills</li>
+                    </ul>
+                    
+                    <p class="text-lg leading-relaxed mt-4">These are just a few of the many benefits students experience when they train with our team. BJJ provides a combination of physical activity and increased mental fortitude. As students learn to anticipate their opponent, they increase in focus and skill. BJJ is a great way for students to release their energy while training their bodies and minds to focus on intentional movement. This art form helps increase their coordination, group skills, and their ability to follow instructions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-self-defense" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('self-defense')">&times;</span>
+            <div class="p-8">
+                <h2 class="text-4xl font-bold mb-6 text-gold-500">Self Defense Program</h2>
+                <div class="text-gray-200 space-y-4">
+                    <p class="text-lg leading-relaxed">Have you found yourself in some scary situations lately? Feeling like you couldn't protect or defend yourself? Looking into women's self-defense classes near you? Perhaps it's time you take advantage of Fabin Rosa's BJJ Self-defense opportunities in Orlando, Florida! Learn how to effortlessly take down your opponent in a realistic attack situation and how to protect yourself in the process.</p>
+                    
+                    <h3 class="text-2xl font-bold mt-6 mb-3 text-gold-400">Self-Defense Class For All</h3>
+                    <p class="text-lg leading-relaxed">Martial arts classes for self-defense training are a great way to learn how to protect both you and your family. When you participate in a self-defense class, you will learn a lot! You can either choose to attend a class specifically designed for self-defense skills and techniques or participate in a martial art, where learning the techniques and fighting styles will, in turn, become your self-defense mechanism.</p>
+                    
+                    <p class="text-lg leading-relaxed">Our gym offers personal safety classes for women and men for self-defense as well as training for other martial arts. Learning Muay Thai or Brazilian Jiu-Jitsu will also leave you fearless against any opponent. Don't let fear run your life, learn how to properly defend yourself and your loved ones! Strengthen your mind, body, and spirit while you learn.</p>
+                    
+                    <h3 class="text-2xl font-bold mt-6 mb-3 text-gold-400">Classes For Women & Kids Learning Self-Defense</h3>
+                    <p class="text-lg leading-relaxed">At Fabin Rosa BJJ of Orlando, our gym offers personal safety classes for both children and women. Sometimes it's necessary to learn certain self-defending techniques while you are young. To avoid getting severely injured by a bully or group of bullies. It is also very common for both men and women to attend any of our classes to learn proper self-defense.</p>
+                    
+                    <p class="text-lg leading-relaxed">Whether the reason is for self-defense or self-empowerment, there is no bad reason to learn how to defend yourself in a dangerous situation. Not only will you gain physical and mental techniques, but you'll feel powerful and not let fear overrun your life. Get out of your comfort zone and take that leap of faith in yourself!</p>
+                    
+                    <h3 class="text-2xl font-bold mt-6 mb-3 text-gold-400">Benefits Of Training With Fabin Rosa BJJ</h3>
+                    <p class="text-lg leading-relaxed">When you choose to train with Fabin Rosa BJJ of Orlando, Florida, you will see what it means to be a family! Our gym encourages all ages and skill levels to participate in our classes. We are a community that builds each other up and encourages the success of our classmates and instructors.</p>
+                    
+                    <p class="text-lg leading-relaxed">The learning is never ending here, whether you've been in the martial art for years or a few weeks. There is always more to learn, personal safety skills to hone, and techniques to master. Our gym is a place to decompress your day and turn off the background noise while focusing on your technique. A safe space to call your own filled with an encouraging and fun community of others who desire the same.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-womens-bjj" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('womens-bjj')">&times;</span>
+            <div class="p-8">
+                <h2 class="text-4xl font-bold mb-6 text-gold-500">Women's Only BJJ</h2>
+                <div class="text-gray-200 space-y-4">
+                    <p class="text-lg leading-relaxed">At Fabin Rosa BJJ in Orlando, our goal is to provide a safe and encouraging gym culture where students, including women, can learn self-defensive skills. Whether you're looking to increase physical fitness or learn a new martial art, we offer women-only BJJ classes taught by highly qualified instructors. If you're looking into one of the best Brazilian Jiu-Jitsu (BJJ) gyms near you, our academy is here to meet your fitness needs!</p>
+                    
+                    <h3 class="text-2xl font-bold mt-6 mb-3 text-gold-400">Why Try Women's Only BJJ?</h3>
+                    <p class="text-lg leading-relaxed">There are many reasons for women to learn Brazilian Jiu-Jitsu skills and techniques. BJJ is one of the popular martial art forms to learn at any age. It's also one of the most popular choices for physical fitness because Jiu-Jitsu helps you stay in great shape. From cardiovascular intensity to heightened mental awareness, BJJ is a great fitness option for women.</p>
+                    
+                    <p class="text-lg leading-relaxed">Perhaps you're thinking about a change in your fitness routine, or you're interested in learning self-defense techniques. Whatever the reason, we invite all women to come to try our women's only BJJ classes. You will learn Jiu-Jitsu techniques that go beyond the classroom and help you in several areas of life.</p>
+                    
+                    <h3 class="text-2xl font-bold mt-6 mb-3 text-gold-400">Learning BJJ Techniques</h3>
+                    <p class="text-lg leading-relaxed">We understand some students feel hesitant to try something new, especially when it comes to martial arts like Jiu-Jitsu. However, martial arts, including BJJ, are easy to learn at any age. Our instructors slowly teach each skill and technique to make mastery easier for students. While BJJ requires consistent practice and attention, the benefits are worthwhile.</p>
+                    
+                    <p class="text-lg leading-relaxed">Our professional and world-class Jiu-Jitsu instructors work hard to meet the fitness needs of every woman in the class. Although we only offer these classes at our Orlando location, we have many women from Altamonte who travel to attend classes. Our goal is to help women increase in physical fitness, learn to defend themselves and feel empowered in any environment.</p>
+                    
+                    <h3 class="text-2xl font-bold mt-6 mb-3 text-gold-400">Benefits Of Training With Fabin Rosa</h3>
+                    <p class="text-lg leading-relaxed">Our goal is to help you achieve your personal fitness goals. When you train with our Jiu-Jitsu instructors, you will notice many physical and mental health benefits as you go through the program.</p>
+                    
+                    <ul class="list-disc list-inside space-y-2 text-lg ml-4">
+                        <li>Self-confidence</li>
+                        <li>Improved mental health and awareness</li>
+                        <li>Reduced stress and anxiety</li>
+                        <li>Better muscle tone and joint health</li>
+                        <li>Learn to defend yourself</li>
+                        <li>Enjoy learning with a community</li>
+                    </ul>
+                    
+                    <p class="text-lg leading-relaxed mt-4">Training with Fabin Rosa in Orlando has numerous benefits for your mental and physical health. We want our women students to feel confident and comfortable in our classes as they learn to defend themselves in any self-defense setting. Whether you want to try a new adventure or expand your fitness regimen, come join us.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-competition-team" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('competition-team')">&times;</span>
+            <div class="p-8">
+                <h2 class="text-4xl font-bold mb-6 text-gold-500">Competition Team</h2>
+                <div class="text-gray-200 space-y-4">
+                    <p class="text-lg leading-relaxed">Welcome to the Fabin Rosa Competition Team Program, where champions are forged through dedication, skill, and camaraderie! Our program is designed to cultivate the talents of aspiring Brazilian Jiu Jitsu athletes, providing them with the tools to excel in local and national competitions. Led by a team of experienced and accomplished black belt instructors, our program is tailored to challenge and refine each participant's technique, physical conditioning, and mental fortitude.</p>
+                    
+                    <p class="text-lg leading-relaxed">At Fabin Rosa, we believe that success is built on a strong foundation. The program begins with a thorough assessment of each athlete's current skills and goals, allowing our instructors to create personalized training plans for optimal growth. The curriculum covers a comprehensive range of techniques, from fundamental positions to advanced submissions, ensuring that competitors have a well-rounded skill set to draw upon during intense matches.</p>
+                    
+                    <p class="text-lg leading-relaxed">Our competition team members benefit from rigorous and structured training sessions, blending technical instruction, live sparring, and specific drills to enhance reflexes and tactical awareness. Moreover, the team atmosphere fosters a sense of community and support, as teammates motivate and inspire each other to reach new heights. With access to state-of-the-art facilities and a passion for excellence, Fabin Rosa is the ideal platform for those seeking to shine in the thrilling world of Brazilian Jiu Jitsu competitions.</p>
+                    
+                    <p class="text-lg leading-relaxed">Whether you're an experienced practitioner looking to elevate your game or a newcomer eager to test your mettle, our competition team program is the ultimate path to achievement in the realm of Brazilian Jiu Jitsu.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
+        // Modal functions
+        function openModal(programId) {
+            document.getElementById('modal-' + programId).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(programId) {
+            document.getElementById('modal-' + programId).classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
         // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -319,10 +704,16 @@
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    // Fade in background image
+                    // Fade in background image and transition to color
                     const bgImage = entry.target.querySelector('.bg-image');
                     if (bgImage) {
                         bgImage.classList.add('visible');
+                        
+                        // Play video if it exists
+                        const video = bgImage.querySelector('video');
+                        if (video) {
+                            video.play();
+                        }
                     }
                     
                     // Animate content
@@ -331,6 +722,24 @@
                         setTimeout(() => {
                             content.classList.add('visible');
                         }, 200);
+                    }
+                } else {
+                    // Transition back to grayscale when scrolling away
+                    const bgImage = entry.target.querySelector('.bg-image');
+                    if (bgImage) {
+                        bgImage.classList.remove('visible');
+                        
+                        // Pause video when scrolling away
+                        const video = bgImage.querySelector('video');
+                        if (video) {
+                            video.pause();
+                        }
+                    }
+                    
+                    // Fade out content
+                    const content = entry.target.querySelector('.program-section');
+                    if (content) {
+                        content.classList.remove('visible');
                     }
                 }
             });
