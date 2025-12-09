@@ -765,82 +765,121 @@
                 Start your journey today. No commitment required.
             </p>
             
-            <form class="bg-neutral-900 rounded-lg p-6 sm:p-8 border border-neutral-800">
+            <form id="trialFormPage" action="https://docs.google.com/forms/d/e/1FAIpQLSd4tz6_OV_wQdXZsTkEuOchHagdVBC-nTb1ZaxpqHIvMsDuzw/formResponse" method="POST" target="hidden_iframe" class="bg-neutral-900 rounded-lg p-6 sm:p-8 border border-neutral-800">
                 <div class="space-y-6">
                     
-                    <!-- Name Field -->
+                    <!-- First Name Field -->
                     <div>
-                        <label for="name" class="block text-sm font-semibold mb-2 text-gray-300">
-                            Full Name *
+                        <label for="firstNamePage" class="block text-sm font-semibold mb-2 text-gray-300">
+                            First Name *
                         </label>
                         <input 
                             type="text" 
-                            id="name" 
-                            name="name" 
+                            id="firstNamePage" 
+                            name="entry.912350723" 
                             required
                             class="w-full px-4 py-3 bg-black border border-neutral-800 rounded-lg focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 text-white transition-all"
-                            placeholder="Enter your full name"
+                            placeholder="Enter your first name"
                         >
                     </div>
 
-                    <!-- Phone Field -->
+                    <!-- Last Name Field -->
                     <div>
-                        <label for="phone" class="block text-sm font-semibold mb-2 text-gray-300">
-                            Phone Number *
+                        <label for="lastNamePage" class="block text-sm font-semibold mb-2 text-gray-300">
+                            Last Name *
                         </label>
                         <input 
-                            type="tel" 
-                            id="phone" 
-                            name="phone" 
+                            type="text" 
+                            id="lastNamePage" 
+                            name="entry.1639132657" 
                             required
                             class="w-full px-4 py-3 bg-black border border-neutral-800 rounded-lg focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 text-white transition-all"
-                            placeholder="(407) 555-1234"
+                            placeholder="Enter your last name"
                         >
                     </div>
 
                     <!-- Email Field -->
                     <div>
-                        <label for="email" class="block text-sm font-semibold mb-2 text-gray-300">
+                        <label for="emailPage" class="block text-sm font-semibold mb-2 text-gray-300">
                             Email Address *
                         </label>
                         <input 
                             type="email" 
-                            id="email" 
-                            name="email" 
+                            id="emailPage" 
+                            name="entry.192218399" 
                             required
                             class="w-full px-4 py-3 bg-black border border-neutral-800 rounded-lg focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 text-white transition-all"
                             placeholder="you@example.com"
                         >
                     </div>
 
+                    <!-- Phone Field -->
+                    <div>
+                        <label for="phonePage" class="block text-sm font-semibold mb-2 text-gray-300">
+                            Phone Number *
+                        </label>
+                        <input 
+                            type="tel" 
+                            id="phonePage" 
+                            name="entry.1470823917" 
+                            required
+                            class="w-full px-4 py-3 bg-black border border-neutral-800 rounded-lg focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 text-white transition-all"
+                            placeholder="(407) 555-1234"
+                        >
+                    </div>
+
                     <!-- Program Interest Field -->
                     <div>
-                        <label for="program" class="block text-sm font-semibold mb-2 text-gray-300">
+                        <label for="programPage" class="block text-sm font-semibold mb-2 text-gray-300">
                             Program of Interest *
                         </label>
                         <select 
-                            id="program" 
-                            name="program" 
+                            id="programPage" 
+                            name="entry.1270043419" 
                             required
                             class="w-full px-4 py-3 bg-black border border-neutral-800 rounded-lg focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 text-white transition-all"
                         >
                             <option value="">Select a program</option>
-                            <option value="adult-bjj">Adult BJJ</option>
-                            <option value="kids-bjj">Kids BJJ</option>
-                            <option value="womens-bjj">Women's BJJ</option>
-                            <option value="muay-thai">Muay Thai Kickboxing</option>
-                            <option value="not-sure">Not Sure - Help Me Choose</option>
+                            <option value="Adult BJJ">Adult BJJ</option>
+                            <option value="Kids BJJ">Kids BJJ</option>
+                            <option value="FR Fit">FR Fit</option>
+                            <option value="MMA">MMA</option>
+                            <option value="Muay Thai & Kickboxing">Muay Thai & Kickboxing</option>
+                            <option value="Preschool BJJ Program">Preschool BJJ Program</option>
+                            <option value="Self Defense Program">Self Defense Program</option>
+                            <option value="Women's Only BJJ">Women's Only BJJ</option>
+                            <option value="Competition Team">Competition Team</option>
+                            <option value="Interested in Multiple Programs">Interested in Multiple Programs</option>
+                        </select>
+                    </div>
+
+                    <!-- Location Field -->
+                    <div>
+                        <label for="locationPage" class="block text-sm font-semibold mb-2 text-gray-300">
+                            Preferred Location *
+                        </label>
+                        <select 
+                            id="locationPage" 
+                            name="entry.1731779693" 
+                            required
+                            class="w-full px-4 py-3 bg-black border border-neutral-800 rounded-lg focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 text-white transition-all"
+                        >
+                            <option value="">Select a location</option>
+                            <option value="Orlando">Orlando</option>
+                            <option value="Casselberry" selected>Casselberry</option>
+                            <option value="Belle Isle">Belle Isle</option>
+                            <option value="Altamonte Springs">Altamonte Springs</option>
                         </select>
                     </div>
 
                     <!-- Message Field (Optional) -->
                     <div>
-                        <label for="message" class="block text-sm font-semibold mb-2 text-gray-300">
+                        <label for="messagePage" class="block text-sm font-semibold mb-2 text-gray-300">
                             Message (Optional)
                         </label>
                         <textarea 
-                            id="message" 
-                            name="message" 
+                            id="messagePage" 
+                            name="entry.1589258916" 
                             rows="4"
                             class="w-full px-4 py-3 bg-black border border-neutral-800 rounded-lg focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 text-white transition-all resize-none"
                             placeholder="Tell us about your goals or any questions you have..."
@@ -991,16 +1030,30 @@
 
     <!-- Free Trial Modal -->
     <div id="freeTrialModal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-        <div class="bg-neutral-900 rounded-lg max-w-md w-full border-2 border-gold-500 relative">
-            <button onclick="closeTrialModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors">
+        <div class="bg-neutral-900 rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto border-2 border-gold-500 relative">
+            <button onclick="closeTrialModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors z-10">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </button>
-            <div class="p-8">
-                <h2 class="text-2xl font-bold text-gold-500 mb-2">Fill out the form for your free week trial</h2>
-                <p class="text-gray-400 mb-6 text-sm">Start your journey with Fabin Rosa BJJ Academy today!</p>
-                <form id="trialForm" class="space-y-4">
+            <div class="pt-16 pb-6 px-6">
+                <h2 class="text-2xl font-bold text-gold-500 mb-2 text-center">Start Your Free Trial</h2>
+                <p class="text-gray-400 mb-6 text-sm text-center">Fill out the form below and we'll contact you within 24 hours!</p>
+                
+                <!-- Google Form Embed -->
+                <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSd4tz6_OV_wQdXZsTkEuOchHagdVBC-nTb1ZaxpqHIvMsDuzw/viewform?embedded=true" 
+                    width="100%" 
+                    height="1815" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0"
+                    class="w-full">
+                    Loading…
+                </iframe>
+            </div>
+        </div>
+    </div>
                     <div>
                         <label for="firstName" class="block text-sm font-medium text-gray-300 mb-1">First Name</label>
                         <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-2 bg-black border border-neutral-700 rounded-lg text-white focus:outline-none focus:border-gold-500 transition-colors">
@@ -1034,6 +1087,16 @@
                         </select>
                     </div>
                     <div>
+                        <label for="location" class="block text-sm font-medium text-gray-300 mb-1">Preferred Location</label>
+                        <select id="location" name="location" required class="w-full px-4 py-2 bg-black border border-neutral-700 rounded-lg text-white focus:outline-none focus:border-gold-500 transition-colors">
+                            <option value="">Select a location</option>
+                            <option value="Orlando">Orlando</option>
+                            <option value="Casselberry">Casselberry</option>
+                            <option value="Belle Isle">Belle Isle</option>
+                            <option value="Altamonte Springs">Altamonte Springs</option>
+                        </select>
+                    </div>
+                    <div>
                         <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message (Optional)</label>
                         <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 bg-black border border-neutral-700 rounded-lg text-white focus:outline-none focus:border-gold-500 transition-colors resize-none" placeholder="Tell us about your goals or any questions you have..."></textarea>
                     </div>
@@ -1045,12 +1108,47 @@
             </div>
         </div>
     </div>
+    <!-- Hidden iframe for form submission -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
     <script>
         function openTrialModal(){document.getElementById('freeTrialModal').classList.remove('hidden');document.body.style.overflow='hidden';}
         function closeTrialModal(){document.getElementById('freeTrialModal').classList.add('hidden');document.body.style.overflow='auto';}
         document.getElementById('freeTrialModal').addEventListener('click',function(e){if(e.target===this)closeTrialModal();});
         document.getElementById('trialForm').addEventListener('submit',function(e){e.preventDefault();alert('Thank you! We will contact you soon to schedule your free week trial.');closeTrialModal();this.reset();});
         document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('a[href="#free-trial"],a[href*="free-trial"]').forEach(b=>b.addEventListener('click',function(e){e.preventDefault();openTrialModal();}));});
+
+        // Handle page form submission
+        document.getElementById('trialFormPage').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Submit form data
+            const form = e.target;
+            const formData = new FormData(form);
+            
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                mode: 'no-cors'
+            }).then(() => {
+                // Show success message
+                form.innerHTML = `
+                    <div class="text-center py-12">
+                        <svg class="w-20 h-20 text-gold-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <h3 class="text-2xl font-bold text-white mb-2">Thank You!</h3>
+                        <p class="text-gray-400">We'll contact you within 24 hours to schedule your free trial.</p>
+                    </div>
+                `;
+                
+                // Reset form after 5 seconds
+                setTimeout(() => {
+                    location.reload();
+                }, 5000);
+            }).catch(() => {
+                alert('There was an error submitting the form. Please try again.');
+            });
+        });
     </script>
 
     <!-- Schedule Loader -->

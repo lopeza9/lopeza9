@@ -354,16 +354,30 @@
 
     <!-- Free Trial Modal -->
     <div id="freeTrialModal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-        <div class="bg-neutral-900 rounded-lg max-w-md w-full border-2 border-gold-500 relative">
-            <button onclick="closeTrialModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors">
+        <div class="bg-neutral-900 rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto border-2 border-gold-500 relative">
+            <button onclick="closeTrialModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors z-10">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </button>
-            <div class="p-8">
-                <h2 class="text-2xl font-bold text-gold-500 mb-2">Fill out the form for your free week trial</h2>
-                <p class="text-gray-400 mb-6 text-sm">Start your journey with Fabin Rosa BJJ Academy today!</p>
-                <form id="trialForm" class="space-y-4">
+            <div class="pt-16 pb-6 px-6">
+                <h2 class="text-2xl font-bold text-gold-500 mb-2 text-center">Start Your Free Trial</h2>
+                <p class="text-gray-400 mb-6 text-sm text-center">Fill out the form below and we'll contact you within 24 hours!</p>
+                
+                <!-- Google Form Embed -->
+                <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSd4tz6_OV_wQdXZsTkEuOchHagdVBC-nTb1ZaxpqHIvMsDuzw/viewform?embedded=true" 
+                    width="100%" 
+                    height="1815" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0"
+                    class="w-full">
+                    Loading…
+                </iframe>
+            </div>
+        </div>
+    </div>
                     <div>
                         <label for="firstName" class="block text-sm font-medium text-gray-300 mb-1">First Name</label>
                         <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-2 bg-black border border-neutral-700 rounded-lg text-white focus:outline-none focus:border-gold-500 transition-colors">
@@ -394,6 +408,16 @@
                             <option value="womens-bjj">Women's Only BJJ</option>
                             <option value="competition-team">Competition Team</option>
                             <option value="multiple-programs">Interested in Multiple Programs</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="location" class="block text-sm font-medium text-gray-300 mb-1">Preferred Location</label>
+                        <select id="location" name="location" required class="w-full px-4 py-2 bg-black border border-neutral-700 rounded-lg text-white focus:outline-none focus:border-gold-500 transition-colors">
+                            <option value="">Select a location</option>
+                            <option value="Orlando">Orlando</option>
+                            <option value="Casselberry">Casselberry</option>
+                            <option value="Belle Isle">Belle Isle</option>
+                            <option value="Altamonte Springs">Altamonte Springs</option>
                         </select>
                     </div>
                     <div>
