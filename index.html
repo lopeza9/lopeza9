@@ -42,12 +42,27 @@
                 </a>
                 
                 <!-- Desktop Navigation -->
-                <div class="hidden md:flex space-x-8">
+                <div class="hidden md:flex space-x-8 items-center">
                     <a href="index.html" class="text-gold-500 hover:text-gold-400 transition-colors">Home</a>
                     <a href="index.html#locations" class="text-gray-300 hover:text-gold-500 transition-colors">Locations</a>
                     <a href="programs.html" class="text-gray-300 hover:text-gold-500 transition-colors">Programs</a>
                     <a href="about.html" class="text-gray-300 hover:text-gold-500 transition-colors">About</a>
                     <a href="social.html" class="text-gray-300 hover:text-gold-500 transition-colors">Social</a>
+                    
+                    <!-- More Dropdown -->
+                    <div class="relative">
+                        <button id="moreDropdownBtn" class="text-gray-300 hover:text-gold-500 transition-colors flex items-center gap-1">
+                            More
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="moreDropdown" class="hidden absolute right-0 mt-2 w-48 bg-neutral-900 border border-neutral-800 rounded-lg shadow-lg py-2">
+                            <a href="https://waiver.smartwaiver.com/w/5dc3ab6903d5e/web/" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-gray-300 hover:text-gold-500 hover:bg-neutral-800 transition-colors">
+                                Waiver
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- Mobile Menu Button -->
@@ -66,6 +81,21 @@
                     <a href="programs.html" class="text-gray-300 hover:text-gold-500 transition-colors py-2">Programs</a>
                     <a href="about.html" class="text-gray-300 hover:text-gold-500 transition-colors py-2">About</a>
                     <a href="social.html" class="text-gray-300 hover:text-gold-500 transition-colors py-2">Social</a>
+                    
+                    <!-- More Dropdown Mobile -->
+                    <div>
+                        <button id="moreDropdownMobileBtn" class="text-gray-300 hover:text-gold-500 transition-colors py-2 flex items-center gap-1 w-full">
+                            More
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="moreDropdownMobile" class="hidden pl-4 flex flex-col space-y-2">
+                            <a href="https://waiver.smartwaiver.com/w/5dc3ab6903d5e/web/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-gold-500 transition-colors py-2">
+                                Waiver
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,6 +107,7 @@
         <video 
             id="heroVideo"
             autoplay 
+            loop
             muted 
             playsinline 
             class="absolute inset-0 w-full h-full object-cover"
@@ -546,6 +577,29 @@
             link.addEventListener('click', function() {
                 mobileMenu.classList.add('hidden');
             });
+        });
+
+        // Desktop More dropdown
+        const moreDropdownBtn = document.getElementById('moreDropdownBtn');
+        const moreDropdown = document.getElementById('moreDropdown');
+        
+        moreDropdownBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            moreDropdown.classList.toggle('hidden');
+        });
+
+        // Mobile More dropdown
+        const moreDropdownMobileBtn = document.getElementById('moreDropdownMobileBtn');
+        const moreDropdownMobile = document.getElementById('moreDropdownMobile');
+        
+        moreDropdownMobileBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            moreDropdownMobile.classList.toggle('hidden');
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function() {
+            moreDropdown.classList.add('hidden');
         });
     </script>
 

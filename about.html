@@ -42,12 +42,27 @@
                 </a>
                 
                 <!-- Desktop Navigation -->
-                <div class="hidden md:flex space-x-8">
+                <div class="hidden md:flex space-x-8 items-center">
                     <a href="index.html" class="text-gray-300 hover:text-gold-500 transition-colors">Home</a>
                     <a href="index.html#locations" class="text-gray-300 hover:text-gold-500 transition-colors">Locations</a>
                     <a href="programs.html" class="text-gray-300 hover:text-gold-500 transition-colors">Programs</a>
                     <a href="about.html" class="text-gold-500 hover:text-gold-400 transition-colors">About</a>
                     <a href="social.html" class="text-gray-300 hover:text-gold-500 transition-colors">Social</a>
+                    
+                    <!-- More Dropdown -->
+                    <div class="relative">
+                        <button id="moreDropdownBtn" class="text-gray-300 hover:text-gold-500 transition-colors flex items-center gap-1">
+                            More
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="moreDropdown" class="hidden absolute right-0 mt-2 w-48 bg-neutral-900 border border-neutral-800 rounded-lg shadow-lg py-2">
+                            <a href="https://waiver.smartwaiver.com/w/5dc3ab6903d5e/web/" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-gray-300 hover:text-gold-500 hover:bg-neutral-800 transition-colors">
+                                Waiver
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- Mobile Menu Button -->
@@ -66,6 +81,21 @@
                     <a href="programs.html" class="text-gray-300 hover:text-gold-500 transition-colors py-2">Programs</a>
                     <a href="about.html" class="text-gold-500 hover:text-gold-400 transition-colors py-2">About</a>
                     <a href="social.html" class="text-gray-300 hover:text-gold-500 transition-colors py-2">Social</a>
+                    
+                    <!-- More Dropdown Mobile -->
+                    <div>
+                        <button id="moreDropdownMobileBtn" class="text-gray-300 hover:text-gold-500 transition-colors py-2 flex items-center gap-1 w-full">
+                            More
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="moreDropdownMobile" class="hidden pl-4 flex flex-col space-y-2">
+                            <a href="https://waiver.smartwaiver.com/w/5dc3ab6903d5e/web/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-gold-500 transition-colors py-2">
+                                Waiver
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -378,60 +408,6 @@
             </div>
         </div>
     </div>
-                    <div>
-                        <label for="firstName" class="block text-sm font-medium text-gray-300 mb-1">First Name</label>
-                        <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-2 bg-black border border-neutral-700 rounded-lg text-white focus:outline-none focus:border-gold-500 transition-colors">
-                    </div>
-                    <div>
-                        <label for="lastName" class="block text-sm font-medium text-gray-300 mb-1">Last Name</label>
-                        <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-2 bg-black border border-neutral-700 rounded-lg text-white focus:outline-none focus:border-gold-500 transition-colors">
-                    </div>
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
-                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 bg-black border border-neutral-700 rounded-lg text-white focus:outline-none focus:border-gold-500 transition-colors">
-                    </div>
-                    <div>
-                        <label for="phone" class="block text-sm font-medium text-gray-300 mb-1">Phone</label>
-                        <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 bg-black border border-neutral-700 rounded-lg text-white focus:outline-none focus:border-gold-500 transition-colors">
-                    </div>
-                    <div>
-                        <label for="program" class="block text-sm font-medium text-gray-300 mb-1">Program</label>
-                        <select id="program" name="program" required class="w-full px-4 py-2 bg-black border border-neutral-700 rounded-lg text-white focus:outline-none focus:border-gold-500 transition-colors">
-                            <option value="">Select a program</option>
-                            <option value="adult-bjj">Adult BJJ</option>
-                            <option value="kids-bjj">Kids BJJ</option>
-                            <option value="fr-fit">FR Fit</option>
-                            <option value="mma">MMA</option>
-                            <option value="muay-thai">Muay Thai & Kickboxing</option>
-                            <option value="preschool-bjj">Preschool BJJ Program</option>
-                            <option value="self-defense">Self Defense Program</option>
-                            <option value="womens-bjj">Women's Only BJJ</option>
-                            <option value="competition-team">Competition Team</option>
-                            <option value="multiple-programs">Interested in Multiple Programs</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="location" class="block text-sm font-medium text-gray-300 mb-1">Preferred Location</label>
-                        <select id="location" name="location" required class="w-full px-4 py-2 bg-black border border-neutral-700 rounded-lg text-white focus:outline-none focus:border-gold-500 transition-colors">
-                            <option value="">Select a location</option>
-                            <option value="Orlando">Orlando</option>
-                            <option value="Casselberry">Casselberry</option>
-                            <option value="Belle Isle">Belle Isle</option>
-                            <option value="Altamonte Springs">Altamonte Springs</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message (Optional)</label>
-                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 bg-black border border-neutral-700 rounded-lg text-white focus:outline-none focus:border-gold-500 transition-colors resize-none" placeholder="Tell us about your goals or any questions you have..."></textarea>
-                    </div>
-                    <div class="flex gap-3 pt-4">
-                        <button type="submit" class="flex-1 bg-gold-500 hover:bg-gold-400 text-black font-bold py-3 rounded-lg transition-colors">Submit</button>
-                        <button type="button" onclick="closeTrialModal()" class="flex-1 bg-neutral-800 hover:bg-neutral-700 text-white font-bold py-3 rounded-lg transition-colors">Cancel</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
     <script>
         function openTrialModal(){document.getElementById('freeTrialModal').classList.remove('hidden');document.body.style.overflow='hidden';}
         function closeTrialModal(){document.getElementById('freeTrialModal').classList.add('hidden');document.body.style.overflow='auto';}
@@ -453,6 +429,29 @@
             link.addEventListener('click', function() {
                 mobileMenu.classList.add('hidden');
             });
+        });
+
+        // Desktop More dropdown
+        const moreDropdownBtn = document.getElementById('moreDropdownBtn');
+        const moreDropdown = document.getElementById('moreDropdown');
+        
+        moreDropdownBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            moreDropdown.classList.toggle('hidden');
+        });
+
+        // Mobile More dropdown
+        const moreDropdownMobileBtn = document.getElementById('moreDropdownMobileBtn');
+        const moreDropdownMobile = document.getElementById('moreDropdownMobile');
+        
+        moreDropdownMobileBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            moreDropdownMobile.classList.toggle('hidden');
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function() {
+            moreDropdown.classList.add('hidden');
         });
     </script>
 
