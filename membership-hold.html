@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Hold Request - Fabin Rosa BJJ Academy</title>
+    <meta name="description" content="Submit a membership hold request for your Fabin Rosa BJJ Academy membership.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gold': {
+                            DEFAULT: '#D4B300',
+                            50: '#FFFCEB',
+                            100: '#FFF6C7',
+                            200: '#FEEE8F',
+                            300: '#FEE557',
+                            400: '#E8C400',
+                            500: '#D4B300',
+                            600: '#B89800',
+                            700: '#9C8400',
+                            800: '#645500',
+                            900: '#2C2600',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-white">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-sm z-50 border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center space-x-3 text-xl font-bold text-white hover:text-gold-500 transition-colors">
+                    <img src="assets/images/fr_logo_main.png" alt="Fabin Rosa BJJ Academy" class="h-24 w-auto">
+                    <span class="hidden sm:inline">Fabin Rosa BJJ Academy</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-300 hover:text-gold-500 transition-colors">Home</a>
+                    <a href="index.html#locations" class="text-gray-300 hover:text-gold-500 transition-colors">Locations</a>
+                    <a href="programs.html" class="text-gray-300 hover:text-gold-500 transition-colors">Programs</a>
+                    <a href="about.html" class="text-gray-300 hover:text-gold-500 transition-colors">About</a>
+                    <a href="social.html" class="text-gray-300 hover:text-gold-500 transition-colors">Social</a>
+                    
+                    <!-- More Dropdown -->
+                    <div class="relative">
+                        <button id="moreDropdownBtn" class="text-gray-300 hover:text-gold-500 transition-colors flex items-center gap-1">
+                            More
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="moreDropdown" class="hidden absolute right-0 mt-2 w-48 bg-neutral-900 border border-neutral-800 rounded-lg shadow-lg py-2">
+                            <a href="https://waiver.smartwaiver.com/w/5dc3ab6903d5e/web/" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-gray-300 hover:text-gold-500 hover:bg-neutral-800 transition-colors">
+                                Waiver
+                            </a>
+                            <a href="membership-hold.html" class="block px-4 py-2 text-gray-300 hover:text-gold-500 hover:bg-neutral-800 transition-colors">
+                                Membership Hold Request
+                            </a>
+                            <a href="membership-cancellation.html" class="block px-4 py-2 text-gray-300 hover:text-gold-500 hover:bg-neutral-800 transition-colors">
+                                Membership Cancellation Request
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="index.html" class="text-gray-300 hover:text-gold-500 transition-colors py-2">Home</a>
+                    <a href="index.html#locations" class="text-gray-300 hover:text-gold-500 transition-colors py-2">Locations</a>
+                    <a href="programs.html" class="text-gray-300 hover:text-gold-500 transition-colors py-2">Programs</a>
+                    <a href="about.html" class="text-gray-300 hover:text-gold-500 transition-colors py-2">About</a>
+                    <a href="social.html" class="text-gray-300 hover:text-gold-500 transition-colors py-2">Social</a>
+                    
+                    <!-- More Dropdown Mobile -->
+                    <div>
+                        <button id="moreDropdownMobileBtn" class="text-gray-300 hover:text-gold-500 transition-colors py-2 flex items-center gap-1 w-full">
+                            More
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="moreDropdownMobile" class="hidden pl-4 flex flex-col space-y-2">
+                            <a href="https://waiver.smartwaiver.com/w/5dc3ab6903d5e/web/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-gold-500 transition-colors py-2">
+                                Waiver
+                            </a>
+                            <a href="membership-hold.html" class="text-gray-300 hover:text-gold-500 transition-colors py-2">
+                                Membership Hold Request
+                            </a>
+                            <a href="membership-cancellation.html" class="text-gray-300 hover:text-gold-500 transition-colors py-2">
+                                Membership Cancellation Request
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl sm:text-5xl font-bold text-gold-500 mb-4">Membership Hold Request</h1>
+                <p class="text-2xl text-red-500 font-bold mb-6">THIS IS NOT A TERMINATION REQUEST</p>
+                <p class="text-lg text-gray-300">
+                    As stated in your membership agreement, you have the option to put your automatically recurring monthly membership on hold for any reason.
+                </p>
+            </div>
+
+            <!-- Information Section -->
+            <div class="bg-neutral-900 rounded-lg p-6 sm:p-8 mb-8 border border-neutral-800">
+                <div class="space-y-6 text-gray-300">
+                    <div>
+                        <p class="leading-relaxed">
+                            <span class="text-gold-500 font-semibold">1.</span> As stated in our membership agreement, you have the option to put your automatically recurring monthly membership on hold for any reason. We understand things come up and we'd like to do what we can to help.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <p class="leading-relaxed">
+                            <span class="text-gold-500 font-semibold">2.</span> Membership hold requests must be submitted no less than 5 business days before your forthcoming scheduled renewal date. Membership hold requests received later cannot be processed until after the forthcoming scheduled renewal payment. All membership payments are non-refundable. Membership hold requests are limited to one time per calendar year in 30-day increments for up to three consecutive 30-day periods (30, 60, or 90 days).
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <p class="leading-relaxed">
+                            <span class="text-gold-500 font-semibold">3.</span> Upon expiration of the hold period that you select below, your account will automatically reactivate and regular membership payments will resume. If you chose to cancel your membership during the hold period, the standard 30-day notice requirement stated in your membership agreement is applicable. If you choose to reactivate your membership after it is canceled, membership rates in effect at the time of reactivation will be applicable (membership rates are subject to change).
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Section -->
+            <div class="bg-neutral-900 rounded-lg p-6 sm:p-8 border border-neutral-800">
+                <form id="holdRequestForm" action="https://docs.google.com/forms/d/e/1FAIpQLSeHVp68z2K3DWEnHdoQvdFNtadgmAFaB9VWvouJk1AwzIXJAg/formResponse" method="POST" target="hidden_iframe" class="space-y-6">
+                    <!-- Personal Information -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="firstName" class="block text-sm font-semibold text-gray-300 mb-2">
+                                First Name <span class="text-red-500">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="firstName" 
+                                name="entry.1320070758" 
+                                required 
+                                class="w-full px-4 py-3 bg-black border border-neutral-700 rounded-lg text-white focus:border-gold-500 focus:outline-none transition-colors"
+                            >
+                        </div>
+                        
+                        <div>
+                            <label for="lastName" class="block text-sm font-semibold text-gray-300 mb-2">
+                                Last Name <span class="text-red-500">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="lastName" 
+                                name="entry.1260126711" 
+                                required 
+                                class="w-full px-4 py-3 bg-black border border-neutral-700 rounded-lg text-white focus:border-gold-500 focus:outline-none transition-colors"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold text-gray-300 mb-2">
+                                Phone <span class="text-red-500">*</span>
+                            </label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="entry.1580930086" 
+                                required 
+                                class="w-full px-4 py-3 bg-black border border-neutral-700 rounded-lg text-white focus:border-gold-500 focus:outline-none transition-colors"
+                            >
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-300 mb-2">
+                                Email <span class="text-red-500">*</span>
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="entry.1636451255" 
+                                required 
+                                class="w-full px-4 py-3 bg-black border border-neutral-700 rounded-lg text-white focus:border-gold-500 focus:outline-none transition-colors"
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Hold Details -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="holdStartDate" class="block text-sm font-semibold text-gray-300 mb-2">
+                                Start of Hold Date <span class="text-red-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <input 
+                                    type="date" 
+                                    id="holdStartDate" 
+                                    name="entry.215580095" 
+                                    required 
+                                    class="w-full px-4 py-3 bg-black border border-neutral-700 rounded-lg text-white focus:border-gold-500 focus:outline-none transition-colors [color-scheme:dark]"
+                                >
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="holdDuration" class="block text-sm font-semibold text-gray-300 mb-2">
+                                Membership Hold Duration <span class="text-red-500">*</span>
+                            </label>
+                            <select 
+                                id="holdDuration" 
+                                name="entry.85262059" 
+                                required 
+                                class="w-full px-4 py-3 bg-black border border-neutral-700 rounded-lg text-white focus:border-gold-500 focus:outline-none transition-colors"
+                            >
+                                <option value="">Select duration</option>
+                                <option value="30 days">30 days</option>
+                                <option value="60 days">60 days</option>
+                                <option value="90 days">90 days</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="reason" class="block text-sm font-semibold text-gray-300 mb-2">
+                            Reason for Membership Hold <span class="text-red-500">*</span>
+                        </label>
+                        <textarea 
+                            id="reason" 
+                            name="entry.1131454931" 
+                            rows="4" 
+                            required 
+                            class="w-full px-4 py-3 bg-black border border-neutral-700 rounded-lg text-white focus:border-gold-500 focus:outline-none transition-colors resize-none"
+                            placeholder="Please provide a brief explanation for your hold request..."
+                        ></textarea>
+                    </div>
+
+                    <!-- Terms and Conditions Checkboxes -->
+                    <div class="border-t border-neutral-700 pt-6 mt-8">
+                        <h3 class="text-lg font-semibold text-gold-500 mb-4">Terms and Conditions</h3>
+                        <div class="space-y-4">
+                            <label class="flex items-start gap-3 cursor-pointer group">
+                                <input 
+                                    type="checkbox" 
+                                    id="checkbox1" 
+                                    name="entry.1384506240" 
+                                    value="Agreed"
+                                    required 
+                                    class="mt-1 w-5 h-5 bg-black border-2 border-neutral-700 rounded focus:ring-2 focus:ring-gold-500 focus:outline-none checked:bg-gold-500 checked:border-gold-500 cursor-pointer"
+                                >
+                                <span class="text-gray-300 text-sm leading-relaxed group-hover:text-white transition-colors">
+                                    I understand that hold requests must be submitted no less than 5 business days before my forthcoming scheduled non-refundable renewal payment.
+                                </span>
+                            </label>
+
+                            <label class="flex items-start gap-3 cursor-pointer group">
+                                <input 
+                                    type="checkbox" 
+                                    id="checkbox2" 
+                                    name="entry.448029864" 
+                                    value="Agreed"
+                                    required 
+                                    class="mt-1 w-5 h-5 bg-black border-2 border-neutral-700 rounded focus:ring-2 focus:ring-gold-500 focus:outline-none checked:bg-gold-500 checked:border-gold-500 cursor-pointer"
+                                >
+                                <span class="text-gray-300 text-sm leading-relaxed group-hover:text-white transition-colors">
+                                    I understand that my non-refundable renewal payment will be processed if this request is submitted less than 5 business days before my renewal date.
+                                </span>
+                            </label>
+
+                            <label class="flex items-start gap-3 cursor-pointer group">
+                                <input 
+                                    type="checkbox" 
+                                    id="checkbox3" 
+                                    name="entry.526378812" 
+                                    value="Agreed"
+                                    required 
+                                    class="mt-1 w-5 h-5 bg-black border-2 border-neutral-700 rounded focus:ring-2 focus:ring-gold-500 focus:outline-none checked:bg-gold-500 checked:border-gold-500 cursor-pointer"
+                                >
+                                <span class="text-gray-300 text-sm leading-relaxed group-hover:text-white transition-colors">
+                                    I understand that if I cancel my membership during the hold period, the 30-day notice required by my membership agreement is still applicable.
+                                </span>
+                            </label>
+
+                            <label class="flex items-start gap-3 cursor-pointer group">
+                                <input 
+                                    type="checkbox" 
+                                    id="checkbox4" 
+                                    name="entry.696858478" 
+                                    value="Agreed"
+                                    required 
+                                    class="mt-1 w-5 h-5 bg-black border-2 border-neutral-700 rounded focus:ring-2 focus:ring-gold-500 focus:outline-none checked:bg-gold-500 checked:border-gold-500 cursor-pointer"
+                                >
+                                <span class="text-gray-300 text-sm leading-relaxed group-hover:text-white transition-colors">
+                                    I understand that my membership and non-refundable payments will resume automatically upon expiration of the hold period that I selected above.
+                                </span>
+                            </label>
+
+                            <label class="flex items-start gap-3 cursor-pointer group">
+                                <input 
+                                    type="checkbox" 
+                                    id="checkbox5" 
+                                    name="entry.1642721822" 
+                                    value="Agreed"
+                                    required 
+                                    class="mt-1 w-5 h-5 bg-black border-2 border-neutral-700 rounded focus:ring-2 focus:ring-gold-500 focus:outline-none checked:bg-gold-500 checked:border-gold-500 cursor-pointer"
+                                >
+                                <span class="text-gray-300 text-sm leading-relaxed group-hover:text-white transition-colors">
+                                    I acknowledge and accept the terms for hold.
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-6">
+                        <button 
+                            type="submit" 
+                            id="submitBtn"
+                            disabled
+                            class="w-full bg-neutral-700 text-gray-500 font-bold py-4 rounded-lg transition-all duration-300 cursor-not-allowed disabled:opacity-50"
+                        >
+                            Submit Hold Request
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+        </div>
+    </footer>
+
+    <!-- Hidden iframe for form submission -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Desktop More dropdown
+        const moreDropdownBtn = document.getElementById('moreDropdownBtn');
+        const moreDropdown = document.getElementById('moreDropdown');
+        
+        moreDropdownBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            moreDropdown.classList.toggle('hidden');
+        });
+
+        // Mobile More dropdown
+        const moreDropdownMobileBtn = document.getElementById('moreDropdownMobileBtn');
+        const moreDropdownMobile = document.getElementById('moreDropdownMobile');
+        
+        moreDropdownMobileBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            moreDropdownMobile.classList.toggle('hidden');
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function() {
+            moreDropdown.classList.add('hidden');
+        });
+
+        // Form Validation and Submit Button Enable/Disable
+        const form = document.getElementById('holdRequestForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const checkboxes = [
+            document.getElementById('checkbox1'),
+            document.getElementById('checkbox2'),
+            document.getElementById('checkbox3'),
+            document.getElementById('checkbox4'),
+            document.getElementById('checkbox5')
+        ];
+        const textInputs = [
+            document.getElementById('firstName'),
+            document.getElementById('lastName'),
+            document.getElementById('phone'),
+            document.getElementById('email'),
+            document.getElementById('holdStartDate'),
+            document.getElementById('holdDuration'),
+            document.getElementById('reason')
+        ];
+
+        function checkFormValidity() {
+            const allCheckboxesChecked = checkboxes.every(cb => cb.checked);
+            const allFieldsFilled = textInputs.every(input => input.value.trim() !== '');
+            
+            if (allCheckboxesChecked && allFieldsFilled) {
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('bg-neutral-700', 'text-gray-500', 'cursor-not-allowed');
+                submitBtn.classList.add('bg-gold-500', 'hover:bg-gold-400', 'text-black', 'cursor-pointer', 'transform', 'hover:scale-105', 'shadow-lg');
+            } else {
+                submitBtn.disabled = true;
+                submitBtn.classList.add('bg-neutral-700', 'text-gray-500', 'cursor-not-allowed');
+                submitBtn.classList.remove('bg-gold-500', 'hover:bg-gold-400', 'text-black', 'cursor-pointer', 'transform', 'hover:scale-105', 'shadow-lg');
+            }
+        }
+
+        // Add event listeners to all form inputs
+        checkboxes.forEach(cb => cb.addEventListener('change', checkFormValidity));
+        textInputs.forEach(input => input.addEventListener('input', checkFormValidity));
+
+        // Form submission
+        form.addEventListener('submit', function(e) {
+            if (!submitBtn.disabled) {
+                // Show success message after a short delay
+                setTimeout(function() {
+                    // Replace form with success message
+                    form.innerHTML = `
+                        <div class="text-center py-12">
+                            <svg class="w-20 h-20 text-gold-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <h3 class="text-2xl font-bold text-gold-500 mb-2">Request Submitted Successfully!</h3>
+                            <p class="text-gray-300 mb-6">We will contact you within 24-48 hours to confirm your membership hold request.</p>
+                            <a href="index.html" class="inline-block bg-gold-500 hover:bg-gold-400 text-black font-bold py-3 px-8 rounded-lg transition-all duration-300">
+                                Return to Home
+                            </a>
+                        </div>
+                    `;
+                }, 1000);
+            }
+        });
+
+        // Set today's date as default for hold start date
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('holdStartDate').value = today;
+
+        // Initial check
+        checkFormValidity();
+    </script>
+
+</body>
+</html>

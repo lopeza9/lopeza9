@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Cancellation Request - Fabin Rosa BJJ Academy</title>
+    <meta name="description" content="Submit a membership cancellation request for your Fabin Rosa BJJ Academy membership.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gold': {
+                            DEFAULT: '#D4B300',
+                            50: '#FFFCEB',
+                            100: '#FFF6C7',
+                            200: '#FEEE8F',
+                            300: '#FEE557',
+                            400: '#E8C400',
+                            500: '#D4B300',
+                            600: '#B89800',
+                            700: '#9C8400',
+                            800: '#645500',
+                            900: '#2C2600',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-white">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-sm z-50 border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center space-x-3 text-xl font-bold text-white hover:text-gold-500 transition-colors">
+                    <img src="assets/images/fr_logo_main.png" alt="Fabin Rosa BJJ Academy" class="h-24 w-auto">
+                    <span class="hidden sm:inline">Fabin Rosa BJJ Academy</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-300 hover:text-gold-500 transition-colors">Home</a>
+                    <a href="index.html#locations" class="text-gray-300 hover:text-gold-500 transition-colors">Locations</a>
+                    <a href="programs.html" class="text-gray-300 hover:text-gold-500 transition-colors">Programs</a>
+                    <a href="about.html" class="text-gray-300 hover:text-gold-500 transition-colors">About</a>
+                    <a href="social.html" class="text-gray-300 hover:text-gold-500 transition-colors">Social</a>
+                    
+                    <!-- More Dropdown -->
+                    <div class="relative">
+                        <button id="moreDropdownBtn" class="text-gray-300 hover:text-gold-500 transition-colors flex items-center gap-1">
+                            More
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="moreDropdown" class="hidden absolute right-0 mt-2 w-48 bg-neutral-900 border border-neutral-800 rounded-lg shadow-lg py-2">
+                            <a href="https://waiver.smartwaiver.com/w/5dc3ab6903d5e/web/" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-gray-300 hover:text-gold-500 hover:bg-neutral-800 transition-colors">
+                                Waiver
+                            </a>
+                            <a href="membership-hold.html" class="block px-4 py-2 text-gray-300 hover:text-gold-500 hover:bg-neutral-800 transition-colors">
+                                Membership Hold Request
+                            </a>
+                            <a href="membership-cancellation.html" class="block px-4 py-2 text-gold-500 hover:bg-neutral-800 transition-colors">
+                                Membership Cancellation Request
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="index.html" class="text-gray-300 hover:text-gold-500 transition-colors py-2">Home</a>
+                    <a href="index.html#locations" class="text-gray-300 hover:text-gold-500 transition-colors py-2">Locations</a>
+                    <a href="programs.html" class="text-gray-300 hover:text-gold-500 transition-colors py-2">Programs</a>
+                    <a href="about.html" class="text-gray-300 hover:text-gold-500 transition-colors py-2">About</a>
+                    <a href="social.html" class="text-gray-300 hover:text-gold-500 transition-colors py-2">Social</a>
+                    
+                    <!-- More Dropdown Mobile -->
+                    <div>
+                        <button id="moreDropdownMobileBtn" class="text-gray-300 hover:text-gold-500 transition-colors py-2 flex items-center gap-1 w-full">
+                            More
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="moreDropdownMobile" class="hidden pl-4 flex flex-col space-y-2">
+                            <a href="https://waiver.smartwaiver.com/w/5dc3ab6903d5e/web/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-gold-500 transition-colors py-2">
+                                Waiver
+                            </a>
+                            <a href="membership-hold.html" class="text-gray-300 hover:text-gold-500 transition-colors py-2">
+                                Membership Hold Request
+                            </a>
+                            <a href="membership-cancellation.html" class="text-gold-500 transition-colors py-2">
+                                Membership Cancellation Request
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl sm:text-5xl font-bold text-gold-500 mb-4">Membership Cancellation Request</h1>
+                <p class="text-2xl text-red-500 font-bold mb-6">WE'RE SORRY TO SEE YOU GO</p>
+            </div>
+
+            <!-- Information Section -->
+            <div class="bg-neutral-900 rounded-lg p-6 sm:p-8 mb-8 border border-neutral-800">
+                <div class="space-y-6 text-gray-300">
+                    <div>
+                        <p class="leading-relaxed">
+                            <span class="text-gold-500 font-semibold">1.</span> If you decide to reactivate your membership in the future (and we hope you do) membership rates in effect at the time of reactivation will be applicable as membership rates are subject to change.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <p class="leading-relaxed">
+                            <span class="text-gold-500 font-semibold">2.</span> If you would like to put your membership on hold instead of canceling, you can submit a <a href="membership-hold.html" class="text-gold-500 hover:text-gold-400 underline">Membership Hold Request</a> for a 30, 60 or 90 day period.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <p class="leading-relaxed">
+                            <span class="text-gold-500 font-semibold">3.</span> Your membership will be canceled 30 days from the submission of the form below. Note that if you have a scheduled renewal payment within this 30-day period, the payment will be processed as scheduled. All payments are non-refundable.
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="leading-relaxed">
+                            <span class="text-gold-500 font-semibold">4.</span> Agreements are auto renewed unless the MEMBERSHIP CANCELLATION FORM is submitted to us at least 30 days prior to your scheduled auto renewal.
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="leading-relaxed">
+                            <span class="text-gold-500 font-semibold">5.</span> If you're sure you'd like to cancel, just complete and submit the form below 30 days prior to your next scheduled payment. This will serve as your 30-day written cancelation notice as required by your membership agreement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Section -->
+            <div class="bg-neutral-900 rounded-lg p-6 sm:p-8 border border-neutral-800">
+                <form id="cancellationForm" action="https://docs.google.com/forms/d/e/1FAIpQLSecD5WyUB8DMb2vz9X6U-DAnLWaRSVOrp3y5_-gIGrQEVNVww/formResponse" method="POST" target="hidden_iframe" class="space-y-6">
+                    <!-- Personal Information -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="firstName" class="block text-sm font-semibold text-gray-300 mb-2">
+                                First Name <span class="text-red-500">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="firstName" 
+                                name="entry.722183444" 
+                                required 
+                                class="w-full px-4 py-3 bg-black border border-neutral-700 rounded-lg text-white focus:border-gold-500 focus:outline-none transition-colors"
+                            >
+                        </div>
+                        
+                        <div>
+                            <label for="lastName" class="block text-sm font-semibold text-gray-300 mb-2">
+                                Last Name <span class="text-red-500">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="lastName" 
+                                name="entry.1909269226" 
+                                required 
+                                class="w-full px-4 py-3 bg-black border border-neutral-700 rounded-lg text-white focus:border-gold-500 focus:outline-none transition-colors"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-300 mb-2">
+                                Email <span class="text-red-500">*</span>
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="entry.1006626791" 
+                                required 
+                                class="w-full px-4 py-3 bg-black border border-neutral-700 rounded-lg text-white focus:border-gold-500 focus:outline-none transition-colors"
+                            >
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold text-gray-300 mb-2">
+                                Phone <span class="text-red-500">*</span>
+                            </label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="entry.860553014" 
+                                required 
+                                class="w-full px-4 py-3 bg-black border border-neutral-700 rounded-lg text-white focus:border-gold-500 focus:outline-none transition-colors"
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Feedback Questions -->
+                    <div>
+                        <label for="earnBack" class="block text-sm font-semibold text-gray-300 mb-2">
+                            Is there anything we can do to earn your business back?
+                        </label>
+                        <textarea 
+                            id="earnBack" 
+                            name="entry.442537249" 
+                            rows="4" 
+                            class="w-full px-4 py-3 bg-black border border-neutral-700 rounded-lg text-white focus:border-gold-500 focus:outline-none transition-colors resize-none"
+                            placeholder="Please share your thoughts..."
+                        ></textarea>
+                    </div>
+
+                    <div>
+                        <label for="reasonForLeaving" class="block text-sm font-semibold text-gray-300 mb-2">
+                            Please select the option below that best describes your reason for leaving <span class="text-red-500">*</span>
+                        </label>
+                        <select 
+                            id="reasonForLeaving" 
+                            name="entry.290651108" 
+                            required 
+                            class="w-full px-4 py-3 bg-black border border-neutral-700 rounded-lg text-white focus:border-gold-500 focus:outline-none transition-colors"
+                        >
+                            <option value="">--</option>
+                            <option value="Too Expensive">Too Expensive</option>
+                            <option value="Location/Travel Distance">Location/Travel Distance</option>
+                            <option value="Training Too Difficult">Training Too Difficult</option>
+                            <option value="Injury">Injury</option>
+                            <option value="Lack of Attendance">Lack of Attendance</option>
+                            <option value="Maternity">Maternity</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="staffRating" class="block text-sm font-semibold text-gray-300 mb-2">
+                            How would you rate staff attention to your fitness goals and needs? <span class="text-red-500">*</span>
+                        </label>
+                        <select 
+                            id="staffRating" 
+                            name="entry.1872607121" 
+                            required 
+                            class="w-full px-4 py-3 bg-black border border-neutral-700 rounded-lg text-white focus:border-gold-500 focus:outline-none transition-colors"
+                        >
+                            <option value="">--</option>
+                            <option value="Great">Great</option>
+                            <option value="Okay">Okay</option>
+                            <option value="Poor">Poor</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="facilitiesRating" class="block text-sm font-semibold text-gray-300 mb-2">
+                            Rate your satisfaction with the facilities including equipment, parking, and accessibility? <span class="text-red-500">*</span>
+                        </label>
+                        <select 
+                            id="facilitiesRating" 
+                            name="entry.1767258462" 
+                            required 
+                            class="w-full px-4 py-3 bg-black border border-neutral-700 rounded-lg text-white focus:border-gold-500 focus:outline-none transition-colors"
+                        >
+                            <option value="">--</option>
+                            <option value="Great">Great</option>
+                            <option value="Okay">Okay</option>
+                            <option value="Poor">Poor</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="overallRating" class="block text-sm font-semibold text-gray-300 mb-2">
+                            Overall, how would you rate your experience? <span class="text-red-500">*</span>
+                        </label>
+                        <select 
+                            id="overallRating" 
+                            name="entry.1691801001" 
+                            required 
+                            class="w-full px-4 py-3 bg-black border border-neutral-700 rounded-lg text-white focus:border-gold-500 focus:outline-none transition-colors"
+                        >
+                            <option value="">--</option>
+                            <option value="Great">Great</option>
+                            <option value="Okay">Okay</option>
+                            <option value="Poor">Poor</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="recommendRating" class="block text-sm font-semibold text-gray-300 mb-2">
+                            How likely are you to recommend our gym to friends/family? <span class="text-red-500">*</span>
+                        </label>
+                        <select 
+                            id="recommendRating" 
+                            name="entry.2107140917" 
+                            required 
+                            class="w-full px-4 py-3 bg-black border border-neutral-700 rounded-lg text-white focus:border-gold-500 focus:outline-none transition-colors"
+                        >
+                            <option value="">--</option>
+                            <option value="Highly likely">Highly likely</option>
+                            <option value="Maybe">Maybe</option>
+                            <option value="Not likely">Not likely</option>
+                        </select>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-6">
+                        <button 
+                            type="submit" 
+                            id="submitBtn"
+                            disabled
+                            class="w-full bg-neutral-700 text-gray-500 font-bold py-4 rounded-lg transition-all duration-300 cursor-not-allowed disabled:opacity-50"
+                        >
+                            Submit Cancellation Request
+                        </button>
+                    </div>
+                </form>
+                
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-neutral-800 py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-400 mb-4">
+                &copy; 2025 Fabin Rosa BJJ Academy. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Desktop More dropdown
+        const moreDropdownBtn = document.getElementById('moreDropdownBtn');
+        const moreDropdown = document.getElementById('moreDropdown');
+        
+        moreDropdownBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            moreDropdown.classList.toggle('hidden');
+        });
+
+        // Mobile More dropdown
+        const moreDropdownMobileBtn = document.getElementById('moreDropdownMobileBtn');
+        const moreDropdownMobile = document.getElementById('moreDropdownMobile');
+        
+        moreDropdownMobileBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            moreDropdownMobile.classList.toggle('hidden');
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function() {
+            moreDropdown.classList.add('hidden');
+        });
+
+        // Form Validation and Submit Button Enable/Disable
+        const form = document.getElementById('cancellationForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const requiredInputs = [
+            document.getElementById('firstName'),
+            document.getElementById('lastName'),
+            document.getElementById('email'),
+            document.getElementById('phone'),
+            document.getElementById('reasonForLeaving'),
+            document.getElementById('staffRating'),
+            document.getElementById('facilitiesRating'),
+            document.getElementById('overallRating'),
+            document.getElementById('recommendRating')
+        ];
+
+        function checkFormValidity() {
+            const allFieldsFilled = requiredInputs.every(input => input.value.trim() !== '');
+            
+            if (allFieldsFilled) {
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('bg-neutral-700', 'text-gray-500', 'cursor-not-allowed');
+                submitBtn.classList.add('bg-gold-500', 'hover:bg-gold-400', 'text-black', 'cursor-pointer', 'transform', 'hover:scale-105', 'shadow-lg');
+            } else {
+                submitBtn.disabled = true;
+                submitBtn.classList.add('bg-neutral-700', 'text-gray-500', 'cursor-not-allowed');
+                submitBtn.classList.remove('bg-gold-500', 'hover:bg-gold-400', 'text-black', 'cursor-pointer', 'transform', 'hover:scale-105', 'shadow-lg');
+            }
+        }
+
+        // Add event listeners to all form inputs
+        requiredInputs.forEach(input => input.addEventListener('input', checkFormValidity));
+        requiredInputs.forEach(input => input.addEventListener('change', checkFormValidity));
+
+        // Form submission
+        form.addEventListener('submit', function(e) {
+            if (submitBtn.disabled) {
+                e.preventDefault();
+                return;
+            }
+            
+            // Show success message after form submits
+            setTimeout(function() {
+                document.getElementById('cancellationForm').innerHTML = `
+                    <div class="text-center py-12">
+                        <svg class="w-24 h-24 mx-auto mb-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <h3 class="text-2xl font-bold text-gray-200 mb-4">Request Submitted Successfully!</h3>
+                        <p class="text-gray-400 mb-6">We have received your cancellation request. Your membership will be canceled 30 days from today. We hope to see you again in the future!</p>
+                        <a href="index.html" class="inline-block bg-gold-500 text-black font-bold py-3 px-8 rounded-lg hover:bg-gold-600 transition-colors">
+                            Return to Home
+                        </a>
+                    </div>
+                `;
+            }, 1000);
+        });
+
+        // Initial check
+        checkFormValidity();
+    </script>
+
+</body>
+</html>
