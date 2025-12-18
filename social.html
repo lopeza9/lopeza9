@@ -206,23 +206,153 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-neutral-900">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-                Ready to Start Your <span class="text-gold-500">Jiu-Jitsu Journey?</span>
+    <!-- Free Week Trial Section -->
+    <section id="free-trial" class="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-black">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-4 text-gold-500">
+                Get Your Free Week Trial
             </h2>
-            <p class="text-xl text-gray-400 mb-8">
-                Join our community at any of our Central Florida locations and experience world-class Brazilian Jiu-Jitsu training.
+            <p class="text-center text-gray-400 mb-12 text-lg">
+                Start your journey today. No commitment required.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#free-trial" onclick="openTrialModal(); return false;" class="bg-gold-500 hover:bg-gold-400 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 transform hover:scale-105">
-                    Start Free Trial
-                </a>
-                <a href="index.html#locations" class="bg-neutral-800 hover:bg-neutral-700 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 border border-neutral-700">
-                    View All Locations
-                </a>
-            </div>
+            
+            <form id="trialFormPage" action="https://docs.google.com/forms/d/e/1FAIpQLSd4tz6_OV_wQdXZsTkEuOchHagdVBC-nTb1ZaxpqHIvMsDuzw/formResponse" method="POST" target="hidden_iframe" class="bg-neutral-900 rounded-lg p-6 sm:p-8 border border-neutral-800">
+                <div class="space-y-6">
+                    
+                    <!-- First Name Field -->
+                    <div>
+                        <label for="firstName" class="block text-sm font-semibold mb-2 text-gray-300">
+                            First Name *
+                        </label>
+                        <input 
+                            type="text" 
+                            id="firstName" 
+                            name="entry.912350723" 
+                            required
+                            class="w-full px-4 py-3 bg-black border border-neutral-800 rounded-lg focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 text-white transition-all"
+                            placeholder="Enter your first name"
+                        >
+                    </div>
+
+                    <!-- Last Name Field -->
+                    <div>
+                        <label for="lastName" class="block text-sm font-semibold mb-2 text-gray-300">
+                            Last Name *
+                        </label>
+                        <input 
+                            type="text" 
+                            id="lastName" 
+                            name="entry.1639132657" 
+                            required
+                            class="w-full px-4 py-3 bg-black border border-neutral-800 rounded-lg focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 text-white transition-all"
+                            placeholder="Enter your last name"
+                        >
+                    </div>
+
+                    <!-- Email Field -->
+                    <div>
+                        <label for="emailPage" class="block text-sm font-semibold mb-2 text-gray-300">
+                            Email Address *
+                        </label>
+                        <input 
+                            type="email" 
+                            id="emailPage" 
+                            name="entry.192218399" 
+                            required
+                            class="w-full px-4 py-3 bg-black border border-neutral-800 rounded-lg focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 text-white transition-all"
+                            placeholder="you@example.com"
+                        >
+                    </div>
+
+                    <!-- Phone Field -->
+                    <div>
+                        <label for="phonePage" class="block text-sm font-semibold mb-2 text-gray-300">
+                            Phone Number *
+                        </label>
+                        <input 
+                            type="tel" 
+                            id="phonePage" 
+                            name="entry.1470823917" 
+                            required
+                            class="w-full px-4 py-3 bg-black border border-neutral-800 rounded-lg focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 text-white transition-all"
+                            placeholder="(407) 555-1234"
+                        >
+                    </div>
+
+                    <!-- Program Interest Field -->
+                    <div>
+                        <label for="programPage" class="block text-sm font-semibold mb-2 text-gray-300">
+                            Program of Interest *
+                        </label>
+                        <select 
+                            id="programPage" 
+                            name="entry.1270043419" 
+                            required
+                            class="w-full px-4 py-3 bg-black border border-neutral-800 rounded-lg focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 text-white transition-all"
+                        >
+                            <option value="">Select a program</option>
+                            <option value="Adult BJJ">Adult BJJ</option>
+                            <option value="Kids BJJ">Kids BJJ</option>
+                            <option value="FR Fit">FR Fit</option>
+                            <option value="MMA">MMA</option>
+                            <option value="Muay Thai & Kickboxing">Muay Thai & Kickboxing</option>
+                            <option value="Preschool BJJ Program">Preschool BJJ Program</option>
+                            <option value="Self Defense Program">Self Defense Program</option>
+                            <option value="Women's Only BJJ">Women's Only BJJ</option>
+                            <option value="Competition Team">Competition Team</option>
+                            <option value="Interested in Multiple Programs">Interested in Multiple Programs</option>
+                        </select>
+                    </div>
+
+                    <!-- Location Field -->
+                    <div>
+                        <label for="locationPage" class="block text-sm font-semibold mb-2 text-gray-300">
+                            Preferred Location *
+                        </label>
+                        <select 
+                            id="locationPage" 
+                            name="entry.1731779693" 
+                            required
+                            class="w-full px-4 py-3 bg-black border border-neutral-800 rounded-lg focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 text-white transition-all"
+                        >
+                            <option value="">Select a location</option>
+                            <option value="Orlando">Orlando</option>
+                            <option value="Casselberry">Casselberry</option>
+                            <option value="Belle Isle">Belle Isle</option>
+                            <option value="Altamonte Springs">Altamonte Springs</option>
+                        </select>
+                    </div>
+
+                    <!-- Message Field (Optional) -->
+                    <div>
+                        <label for="messagePage" class="block text-sm font-semibold mb-2 text-gray-300">
+                            Message (Optional)
+                        </label>
+                        <textarea 
+                            id="messagePage" 
+                            name="entry.1589258916" 
+                            rows="4"
+                            class="w-full px-4 py-3 bg-black border border-neutral-800 rounded-lg focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 text-white transition-all resize-none"
+                            placeholder="Tell us about your goals or any questions you have..."
+                        ></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button 
+                        type="submit"
+                        class="w-full bg-gold-500 hover:bg-gold-400 text-white font-bold py-4 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                    >
+                        Claim Your Free Week Trial
+                    </button>
+
+                    <p class="text-sm text-gray-500 text-center">
+                        By submitting this form, you agree to be contacted about your free trial.
+                    </p>
+
+                </div>
+            </form>
+            
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
         </div>
     </section>
 
@@ -272,61 +402,23 @@
         </div>
     </footer>
 
-    <!-- Free Trial Modal -->
-    <div id="trialModal" class="hidden fixed inset-0 bg-black bg-opacity-75 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-        <div class="bg-neutral-900 rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto border-2 border-gold-500 relative">
-            <button onclick="closeTrialModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors z-10">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-            
-            <div class="pt-16 pb-6 px-6">
-                <h3 class="text-2xl font-bold text-gold-500 mb-2 text-center">Start Your Free Trial</h3>
-                <p class="text-gray-400 mb-6 text-center">Fill out the form below and we'll contact you within 24 hours!</p>
-                
-                <!-- Google Form Embed -->
-                <iframe 
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSd4tz6_OV_wQdXZsTkEuOchHagdVBC-nTb1ZaxpqHIvMsDuzw/viewform?embedded=true" 
-                    width="100%" 
-                    height="1815" 
-                    frameborder="0" 
-                    marginheight="0" 
-                    marginwidth="0"
-                    class="w-full">
-                    Loading…
-                </iframe>
-            </div>
-        </div>
-    </div>
-
+    <!-- Form Success Handler Script -->
     <script>
-        // Modal Functions
-        function openTrialModal() {
-            document.getElementById('trialModal').classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeTrialModal() {
-            document.getElementById('trialModal').classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-
-        // Close modal when clicking outside
-        document.getElementById('trialModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeTrialModal();
-            }
-        });
-
-        // Listen for any links with #free-trial
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('a[href="#free-trial"]').forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    openTrialModal();
-                });
-            });
+        document.getElementById('trialFormPage').addEventListener('submit', function() {
+            setTimeout(function() {
+                document.getElementById('trialFormPage').innerHTML = `
+                    <div class="text-center py-12">
+                        <svg class="w-24 h-24 mx-auto mb-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <h3 class="text-2xl font-bold text-gray-200 mb-4">Thank You!</h3>
+                        <p class="text-gray-400 mb-6">We've received your request and will contact you within 24 hours to schedule your free week trial.</p>
+                        <a href="index.html" class="inline-block bg-gold-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-gold-600 transition-colors">
+                            Return to Home
+                        </a>
+                    </div>
+                `;
+            }, 1000);
         });
     </script>
 
