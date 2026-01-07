@@ -1256,12 +1256,46 @@
         document.getElementById('trialForm').addEventListener('submit',function(e){e.preventDefault();alert('Thank you! We will contact you soon to schedule your free week trial.');closeTrialModal();this.reset();});
         document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('a[href="#free-trial"],a[href*="free-trial"]').forEach(b=>b.addEventListener('click',function(e){e.preventDefault();openTrialModal();}));});
 
-        // Handle page form submission
-        document.getElementById('trialFormPage').addEventListener('submit', function() {
+        // Handle page form submission with validation and spam protection
+        const trialFormPage = document.getElementById('trialFormPage');
+        const submitButton = trialFormPage.querySelector('button[type="submit"]');
+        let isSubmitting = false;
+
+        trialFormPage.addEventListener('submit', function(e) {
+            // Check if form is valid
+            if (!trialFormPage.checkValidity()) {
+                return; // Let HTML5 validation handle it
+            }
+
+            // Prevent multiple submissions
+            if (isSubmitting) {
+                e.preventDefault();
+                return;
+            }
+
+            isSubmitting = true;
+            
+            // Disable button and show loading state
+            submitButton.disabled = true;
+            submitButton.innerHTML = 'Submitting...';
+            submitButton.classList.remove('hover:bg-gold-400', 'hover:scale-105');
+            submitButton.classList.add('opacity-50', 'cursor-not-allowed');
+            
+            // Show success message after form submits to hidden iframe
             setTimeout(function() {
-                document.getElementById('trialFormPage').innerHTML = `
+                trialFormPage.innerHTML = `
                     <div class="text-center py-12">
                         <svg class="w-24 h-24 mx-auto mb-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <h3 class="text-2xl font-bold text-gray-200 mb-4">Thank You!</h3>
+                        <p class="text-gray-400 mb-6">We've received your request and will contact you within 24 hours to schedule your free week trial.</p>
+                        <a href="altamonte.html" class="inline-block bg-gold-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-gold-600 transition-colors">
+                            Submit Another Request
+                        </a>
+                    </div>
+                `;
+            }, 1000);
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
                         <h3 class="text-2xl font-bold text-gray-200 mb-4">Thank You!</h3>
