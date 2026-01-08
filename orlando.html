@@ -1028,13 +1028,22 @@
                         ></textarea>
                     </div>
 
-                    <!-- Submit Button -->
-                    <button 
-                        type="submit"
-                        class="w-full bg-gold-500 hover:bg-gold-400 text-white font-bold py-4 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
-                    >
-                        Claim Your Free Week Trial
-                    </button>
+                    <!-- Submit and Clear Buttons -->
+                    <div class="flex gap-4">
+                        <button 
+                            type="submit"
+                            class="flex-1 bg-gold-500 hover:bg-gold-400 text-white font-bold py-4 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                        >
+                            Claim Your Free Week Trial
+                        </button>
+                        <button 
+                            type="button"
+                            onclick="document.getElementById('trialFormPage').reset();"
+                            class="px-6 bg-neutral-800 hover:bg-neutral-700 text-white font-bold py-4 rounded-lg text-lg transition-all duration-300 border border-neutral-700 hover:border-neutral-600"
+                        >
+                            Clear Form
+                        </button>
+                    </div>
 
                     <p class="text-sm text-gray-500 text-center">
                         By submitting this form, you agree to be contacted about your free trial.
@@ -1170,67 +1179,16 @@
         </div>
     </footer>
 
-    <!-- Free Trial Modal -->
-    <div id="freeTrialModal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-        <div class="bg-neutral-900 rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto border-2 border-gold-500 relative">
-            <!-- Close X Button -->
-            <button onclick="closeTrialModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors z-10">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-
-            <!-- Modal Content -->
-            <div class="pt-16 pb-6 px-6">
-                <h2 class="text-2xl font-bold text-gold-500 mb-2 text-center">Start Your Free Trial</h2>
-                <p class="text-gray-400 mb-6 text-sm text-center">Fill out the form below and we'll contact you within 24 hours!</p>
-
-                <!-- Google Form Embed -->
-                <iframe 
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSd4tz6_OV_wQdXZsTkEuOchHagdVBC-nTb1ZaxpqHIvMsDuzw/viewform?embedded=true" 
-                    width="100%" 
-                    height="1815" 
-                    frameborder="0" 
-                    marginheight="0" 
-                    marginwidth="0"
-                    class="w-full">
-                    Loading…
-                </iframe>
-            </div>
-        </div>
-    </div>
-
     <!-- Hidden iframe for form submission -->
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
     <script>
-        function openTrialModal() {
-            document.getElementById('freeTrialModal').classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeTrialModal() {
-            document.getElementById('freeTrialModal').classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-
-        document.getElementById('freeTrialModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeTrialModal();
-            }
-        });
-
         // Handle page form submission with validation and spam protection
         const trialFormPage = document.getElementById('trialFormPage');
         const submitButton = trialFormPage.querySelector('button[type="submit"]');
         let isSubmitting = false;
 
         trialFormPage.addEventListener('submit', function(e) {
-            // Check if form is valid
-            if (!trialFormPage.checkValidity()) {
-                return; // Let HTML5 validation handle it
-            }
-
             // Prevent multiple submissions
             if (isSubmitting) {
                 e.preventDefault();
@@ -1260,36 +1218,6 @@
                     </div>
                 `;
             }, 1000);
-            }).catch(() => {
-                alert('There was an error submitting the form. Please try again.');
-            });
-        });
-
-        document.getElementById('trialForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = {
-                firstName: document.getElementById('firstName').value,
-                lastName: document.getElementById('lastName').value,
-                email: document.getElementById('email').value,
-                phone: document.getElementById('phone').value,
-                program: document.getElementById('program').value
-            };
-            
-            console.log('Form submitted:', formData);
-            alert('Thank you! We will contact you soon to schedule your free week trial.');
-            closeTrialModal();
-            this.reset();
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const freeTrialButtons = document.querySelectorAll('a[href="#free-trial"], a[href*="free-trial"]');
-            freeTrialButtons.forEach(button => {
-                button.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    openTrialModal();
-                });
-            });
         });
     </script>
 

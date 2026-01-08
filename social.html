@@ -337,13 +337,22 @@
                         ></textarea>
                     </div>
 
-                    <!-- Submit Button -->
-                    <button 
-                        type="submit"
-                        class="w-full bg-gold-500 hover:bg-gold-400 text-white font-bold py-4 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
-                    >
-                        Claim Your Free Week Trial
-                    </button>
+                    <!-- Submit and Clear Buttons -->
+                    <div class="flex gap-4">
+                        <button 
+                            type="submit"
+                            class="flex-1 bg-gold-500 hover:bg-gold-400 text-white font-bold py-4 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                        >
+                            Claim Your Free Week Trial
+                        </button>
+                        <button 
+                            type="button"
+                            onclick="document.getElementById('trialFormPage').reset();"
+                            class="px-6 bg-neutral-800 hover:bg-neutral-700 text-white font-bold py-4 rounded-lg text-lg transition-all duration-300 border border-neutral-700 hover:border-neutral-600"
+                        >
+                            Clear Form
+                        </button>
+                    </div>
 
                     <p class="text-sm text-gray-500 text-center">
                         By submitting this form, you agree to be contacted about your free trial.
@@ -410,11 +419,6 @@
         let isSubmitting = false;
 
         trialFormPage.addEventListener('submit', function(e) {
-            // Check if form is valid
-            if (!trialFormPage.checkValidity()) {
-                return; // Let HTML5 validation handle it
-            }
-
             // Prevent multiple submissions
             if (isSubmitting) {
                 e.preventDefault();
