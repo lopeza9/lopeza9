@@ -416,7 +416,26 @@
         // Handle page form submission with validation and spam protection
         const trialFormPage = document.getElementById('trialFormPage');
         const submitButton = trialFormPage.querySelector('button[type="submit"]');
+        const hiddenIframe = document.getElementById('hidden_iframe');
         let isSubmitting = false;
+
+        // Listen for iframe load to confirm submission
+        hiddenIframe.addEventListener('load', function() {
+            if (isSubmitting) {
+                trialFormPage.innerHTML = `
+                    <div class="text-center py-12">
+                        <svg class="w-24 h-24 mx-auto mb-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <h3 class="text-2xl font-bold text-gray-200 mb-4">Thank You!</h3>
+                        <p class="text-gray-400 mb-6">We've received your request and will contact you within 24 hours to schedule your free week trial.</p>
+                        <a href="index.html" class="inline-block bg-gold-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-gold-600 transition-colors">
+                            Go Back
+                        </a>
+                    </div>
+                `;
+            }
+        });
 
         trialFormPage.addEventListener('submit', function(e) {
             // Prevent multiple submissions
@@ -432,22 +451,6 @@
             submitButton.innerHTML = 'Submitting...';
             submitButton.classList.remove('hover:bg-gold-400', 'hover:scale-105');
             submitButton.classList.add('opacity-50', 'cursor-not-allowed');
-            
-            // Show success message after form submits to hidden iframe
-            setTimeout(function() {
-                trialFormPage.innerHTML = `
-                    <div class="text-center py-12">
-                        <svg class="w-24 h-24 mx-auto mb-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <h3 class="text-2xl font-bold text-gray-200 mb-4">Thank You!</h3>
-                        <p class="text-gray-400 mb-6">We've received your request and will contact you within 24 hours to schedule your free week trial.</p>
-                        <a href="social.html" class="inline-block bg-gold-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-gold-600 transition-colors">
-                            Submit Another Request
-                        </a>
-                    </div>
-                `;
-            }, 1000);
         });
     </script>
 
